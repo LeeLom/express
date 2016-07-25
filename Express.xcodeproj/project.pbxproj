@@ -14,6 +14,8 @@
 		E617B4081D447A8100701817 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E617B4061D447A8100701817 /* Main.storyboard */; };
 		E617B40A1D447A8100701817 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E617B4091D447A8100701817 /* Assets.xcassets */; };
 		E617B40D1D447A8100701817 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E617B40B1D447A8100701817 /* LaunchScreen.storyboard */; };
+		E617B41A1D44973100701817 /* ExpressPhoneNumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E617B4191D44973100701817 /* ExpressPhoneNumViewController.m */; };
+		E617B41E1D44991900701817 /* ExpressPhoneNum.m in Sources */ = {isa = PBXBuildFile; fileRef = E617B41D1D44991900701817 /* ExpressPhoneNum.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		E617B4091D447A8100701817 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E617B40C1D447A8100701817 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E617B40E1D447A8100701817 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E617B4181D44973100701817 /* ExpressPhoneNumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExpressPhoneNumViewController.h; path = Controller/ExpressPhoneNumViewController.h; sourceTree = "<group>"; };
+		E617B4191D44973100701817 /* ExpressPhoneNumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExpressPhoneNumViewController.m; path = Controller/ExpressPhoneNumViewController.m; sourceTree = "<group>"; };
+		E617B41C1D44991900701817 /* ExpressPhoneNum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExpressPhoneNum.h; path = Model/ExpressPhoneNum.h; sourceTree = "<group>"; };
+		E617B41D1D44991900701817 /* ExpressPhoneNum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExpressPhoneNum.m; path = Model/ExpressPhoneNum.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,16 +67,11 @@
 		E617B3F91D447A8100701817 /* Express */ = {
 			isa = PBXGroup;
 			children = (
+				E617B41B1D4498E500701817 /* Model */,
+				E617B4171D44913600701817 /* Controller */,
 				E617B3FD1D447A8100701817 /* AppDelegate.h */,
 				E617B3FE1D447A8100701817 /* AppDelegate.m */,
-				E617B4001D447A8100701817 /* FirstViewController.h */,
-				E617B4011D447A8100701817 /* FirstViewController.m */,
-				E617B4031D447A8100701817 /* SecondViewController.h */,
-				E617B4041D447A8100701817 /* SecondViewController.m */,
-				E617B4061D447A8100701817 /* Main.storyboard */,
 				E617B4091D447A8100701817 /* Assets.xcassets */,
-				E617B40B1D447A8100701817 /* LaunchScreen.storyboard */,
-				E617B40E1D447A8100701817 /* Info.plist */,
 				E617B3FA1D447A8100701817 /* Supporting Files */,
 			);
 			path = Express;
@@ -79,9 +80,34 @@
 		E617B3FA1D447A8100701817 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E617B4061D447A8100701817 /* Main.storyboard */,
+				E617B40B1D447A8100701817 /* LaunchScreen.storyboard */,
+				E617B40E1D447A8100701817 /* Info.plist */,
 				E617B3FB1D447A8100701817 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E617B4171D44913600701817 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E617B4001D447A8100701817 /* FirstViewController.h */,
+				E617B4011D447A8100701817 /* FirstViewController.m */,
+				E617B4031D447A8100701817 /* SecondViewController.h */,
+				E617B4041D447A8100701817 /* SecondViewController.m */,
+				E617B4181D44973100701817 /* ExpressPhoneNumViewController.h */,
+				E617B4191D44973100701817 /* ExpressPhoneNumViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E617B41B1D4498E500701817 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E617B41C1D44991900701817 /* ExpressPhoneNum.h */,
+				E617B41D1D44991900701817 /* ExpressPhoneNum.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,8 +183,10 @@
 			files = (
 				E617B4051D447A8100701817 /* SecondViewController.m in Sources */,
 				E617B3FF1D447A8100701817 /* AppDelegate.m in Sources */,
+				E617B41E1D44991900701817 /* ExpressPhoneNum.m in Sources */,
 				E617B4021D447A8100701817 /* FirstViewController.m in Sources */,
 				E617B3FC1D447A8100701817 /* main.m in Sources */,
+				E617B41A1D44973100701817 /* ExpressPhoneNumViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
