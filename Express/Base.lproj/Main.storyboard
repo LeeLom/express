@@ -26,7 +26,6 @@
         <!--First View Controller-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
                 <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="9pv-A4-QxB" customClass="FirstViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
@@ -49,6 +48,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKb-Tf-OK6">
                                 <rect key="frame" x="139" y="291" width="97" height="30"/>
                                 <state key="normal" title="查询"/>
+                                <connections>
+                                    <action selector="expressSearch:" destination="9pv-A4-QxB" eventType="touchUpInside" id="VFg-9F-QIS"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="快递名称备注" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bS9-N4-hod">
                                 <rect key="frame" x="134" y="113" width="106" height="30"/>
@@ -61,7 +63,13 @@
                     <tabBarItem key="tabBarItem" id="acW-dT-cKf"/>
                     <navigationItem key="navigationItem" id="fse-Tf-j8T"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="expressCompany" destination="GfN-Ti-sKp" id="7rt-4r-43T"/>
+                        <outlet property="expressForUser" destination="bS9-N4-hod" id="ssj-V2-oJn"/>
+                        <outlet property="expressNum" destination="GKD-VH-YTL" id="PCB-2p-p7I"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="19.5" y="-240.5"/>
         </scene>

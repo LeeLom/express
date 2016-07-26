@@ -9,6 +9,9 @@
 #import "FirstViewController.h"
 
 @interface FirstViewController ()
+@property (strong, nonatomic) IBOutlet UITextField *expressForUser;
+@property (strong, nonatomic) IBOutlet UITextField *expressNum;
+@property (strong, nonatomic) IBOutlet UITextField *expressCompany;
 
 @end
 
@@ -22,6 +25,8 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)expressSearch:(id)sender {
 }
 
 @end
