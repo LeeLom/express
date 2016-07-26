@@ -20,6 +20,7 @@
 		E6C8F9BD1D47321300E52D0E /* MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C8F9BC1D47321300E52D0E /* MD5.m */; };
 		E6C8F9C31D473A3200E52D0E /* MF_Base64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C8F9C21D473A3200E52D0E /* MF_Base64Additions.m */; };
 		E6C8F9C61D4777BA00E52D0E /* ExpressInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C8F9C51D4777BA00E52D0E /* ExpressInfo.m */; };
+		E6C8F9C91D47870200E52D0E /* ExpressTracesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C8F9C81D47870200E52D0E /* ExpressTracesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,8 @@
 		E6C8F9C21D473A3200E52D0E /* MF_Base64Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MF_Base64Additions.m; path = Model/MF_Base64Additions.m; sourceTree = "<group>"; };
 		E6C8F9C41D4777BA00E52D0E /* ExpressInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExpressInfo.h; path = Model/ExpressInfo.h; sourceTree = "<group>"; };
 		E6C8F9C51D4777BA00E52D0E /* ExpressInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExpressInfo.m; path = Model/ExpressInfo.m; sourceTree = "<group>"; };
+		E6C8F9C71D47870200E52D0E /* ExpressTracesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExpressTracesViewController.h; path = Controller/ExpressTracesViewController.h; sourceTree = "<group>"; };
+		E6C8F9C81D47870200E52D0E /* ExpressTracesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExpressTracesViewController.m; path = Controller/ExpressTracesViewController.m; sourceTree = "<group>"; };
 		FFDF3D313DDDC8BF5A6C090E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +133,8 @@
 				E617B4041D447A8100701817 /* SecondViewController.m */,
 				E617B4181D44973100701817 /* ExpressPhoneNumViewController.h */,
 				E617B4191D44973100701817 /* ExpressPhoneNumViewController.m */,
+				E6C8F9C71D47870200E52D0E /* ExpressTracesViewController.h */,
+				E6C8F9C81D47870200E52D0E /* ExpressTracesViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 				E617B3FF1D447A8100701817 /* AppDelegate.m in Sources */,
 				E6C8F9BD1D47321300E52D0E /* MD5.m in Sources */,
 				E617B41E1D44991900701817 /* ExpressPhoneNum.m in Sources */,
+				E6C8F9C91D47870200E52D0E /* ExpressTracesViewController.m in Sources */,
 				E617B4021D447A8100701817 /* FirstViewController.m in Sources */,
 				E6C8F9C31D473A3200E52D0E /* MF_Base64Additions.m in Sources */,
 				E617B3FC1D447A8100701817 /* main.m in Sources */,
