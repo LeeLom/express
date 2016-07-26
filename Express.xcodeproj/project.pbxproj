@@ -17,7 +17,7 @@
 		E617B41A1D44973100701817 /* ExpressPhoneNumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E617B4191D44973100701817 /* ExpressPhoneNumViewController.m */; };
 		E617B41E1D44991900701817 /* ExpressPhoneNum.m in Sources */ = {isa = PBXBuildFile; fileRef = E617B41D1D44991900701817 /* ExpressPhoneNum.m */; };
 		E6C8F9BD1D47321300E52D0E /* MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C8F9BC1D47321300E52D0E /* MD5.m */; };
-		E6C8F9C01D47376A00E52D0E /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C8F9BF1D47376A00E52D0E /* Base64.m */; };
+		E6C8F9C31D473A3200E52D0E /* MF_Base64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C8F9C21D473A3200E52D0E /* MF_Base64Additions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,8 +39,8 @@
 		E617B41D1D44991900701817 /* ExpressPhoneNum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExpressPhoneNum.m; path = Model/ExpressPhoneNum.m; sourceTree = "<group>"; };
 		E6C8F9BB1D47321300E52D0E /* MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MD5.h; path = Model/MD5.h; sourceTree = "<group>"; };
 		E6C8F9BC1D47321300E52D0E /* MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MD5.m; path = Model/MD5.m; sourceTree = "<group>"; };
-		E6C8F9BE1D47376A00E52D0E /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Base64.h; path = Model/Base64.h; sourceTree = "<group>"; };
-		E6C8F9BF1D47376A00E52D0E /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Base64.m; path = Model/Base64.m; sourceTree = "<group>"; };
+		E6C8F9C11D473A3200E52D0E /* MF_Base64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MF_Base64Additions.h; path = Model/MF_Base64Additions.h; sourceTree = "<group>"; };
+		E6C8F9C21D473A3200E52D0E /* MF_Base64Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MF_Base64Additions.m; path = Model/MF_Base64Additions.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,10 +110,10 @@
 		E617B41B1D4498E500701817 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E6C8F9C11D473A3200E52D0E /* MF_Base64Additions.h */,
+				E6C8F9C21D473A3200E52D0E /* MF_Base64Additions.m */,
 				E6C8F9BB1D47321300E52D0E /* MD5.h */,
 				E6C8F9BC1D47321300E52D0E /* MD5.m */,
-				E6C8F9BE1D47376A00E52D0E /* Base64.h */,
-				E6C8F9BF1D47376A00E52D0E /* Base64.m */,
 				E617B41C1D44991900701817 /* ExpressPhoneNum.h */,
 				E617B41D1D44991900701817 /* ExpressPhoneNum.m */,
 			);
@@ -191,12 +191,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6C8F9C01D47376A00E52D0E /* Base64.m in Sources */,
 				E617B4051D447A8100701817 /* SecondViewController.m in Sources */,
 				E617B3FF1D447A8100701817 /* AppDelegate.m in Sources */,
 				E6C8F9BD1D47321300E52D0E /* MD5.m in Sources */,
 				E617B41E1D44991900701817 /* ExpressPhoneNum.m in Sources */,
 				E617B4021D447A8100701817 /* FirstViewController.m in Sources */,
+				E6C8F9C31D473A3200E52D0E /* MF_Base64Additions.m in Sources */,
 				E617B3FC1D447A8100701817 /* main.m in Sources */,
 				E617B41A1D44973100701817 /* ExpressPhoneNumViewController.m in Sources */,
 			);
