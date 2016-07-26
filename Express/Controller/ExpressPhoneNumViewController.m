@@ -80,7 +80,7 @@
     ExpressPhoneNum* express14 = [[ExpressPhoneNum alloc]initPhoneNum:@"传志快递" andNum:@"400-006-9156"];
     ExpressPhoneNum* express15 = [[ExpressPhoneNum alloc]initPhoneNum:@"城际快递" andNum:@"4000-523-525"];
     ExpressPhoneNum* express16 = [[ExpressPhoneNum alloc]initPhoneNum:@"超峰快递" andNum:@"0800-658-999"];
-    self.expressC = [[NSArray alloc]initWithObjects:express8,express8,express10,express11,express12,
+    self.expressC = [[NSArray alloc]initWithObjects:express8,express9,express10,express11,express12,
                          express13,express14,express15,express16, nil];
     //D
     ExpressPhoneNum* express17 = [[ExpressPhoneNum alloc]initPhoneNum:@"大达物流" andNum:@"400-098-5656"];

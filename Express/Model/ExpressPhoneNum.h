@@ -5,6 +5,9 @@
 //  Created by LeeLom on 16/7/24.
 //  Copyright © 2016年 LeeLom. All rights reserved.
 //
+/*
+ 用于辅助完成快递电话的相关信息
+ */
 
 #import <Foundation/Foundation.h>
 

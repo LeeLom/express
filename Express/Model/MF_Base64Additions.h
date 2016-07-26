@@ -9,6 +9,7 @@
 //  Public Domain
 //  Hosted at https://github.com/ekscrypto/Base64
 //
+//完成base64编码
 
 #import <Foundation/Foundation.h>
 
