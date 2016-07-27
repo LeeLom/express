@@ -41,17 +41,11 @@ NSArray* expressTraces;//快递轨迹
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Incomplete implementation, return the number of sections
-    //分成两个Section
-    //section 1:To show the title
-    //Section 2:To show the traces
-    return 2;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of rows
-    if (section == 0) {
-        return 1;
-    }
     return [expressTraces count];
 }
 
@@ -70,8 +64,21 @@ NSArray* expressTraces;//快递轨迹
     static NSString* cellIndentifier = @"UITableViewCellTrace";
     UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:cellIndentifier];
     if (!cell) {
-        cell = [[UITableViewCell alloc]initWithStyle:<#(UITableViewCellStyle)#> reuseIdentifier:cellIndentifier]
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIndentifier];
     }
+    UILabel* secondsLabel = (UILabel *)[cell viewWithTag:100];
+    UILabel* dayLabel = (UILabel *)[cell viewWithTag:101];
+    UITextView* tracesInfo = (UITextView *)[cell viewWithTag:102];
+    
+    NSDictionary* traces = expressTraces[indexPath.row];
+    NSString* tracesInfoString = [traces objectForKey:@"AcceptStation"];//得到物流轨迹
+    NSString* timeInfoString = [traces objectForKey:@"AcceptTime"];//获得物流时间
+    NSString* secondsString = [timeInfoString substringWithRange:NSMakeRange(11, 5)];//获得小时和分钟
+    NSString* dayString = [timeInfoString substringToIndex:10];//获得年月日
+    
+    secondsLabel.text = secondsString;
+    dayLabel.text = dayString;
+    tracesInfo.text = tracesInfoString;
     
     return cell;
 }

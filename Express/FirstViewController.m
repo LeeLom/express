@@ -70,8 +70,9 @@
             [expressTraces addObject:traces];
         }
         NSDictionary* traces = expressTraces[3];
-        NSString* traces2 = [traces objectForKey:@"AcceptStation"];
-        NSLog(@"轨迹：%@",traces2);
+        NSString* traces2 = [traces objectForKey:@"AcceptTime"];
+        NSLog(@"轨迹：%@",[traces2 substringToIndex:10]);//获得2016-07-23
+        NSLog(@"轨迹：%@",[traces2 substringWithRange:NSMakeRange(11, 5)]);//获得20：53
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"请求失败：%@",error.description);
     }];
