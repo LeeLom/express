@@ -23,7 +23,7 @@
             </objects>
             <point key="canvasLocation" x="-440.5" y="-240.5"/>
         </scene>
-        <!--First View Controller-->
+        <!--快递查询-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="9pv-A4-QxB" customClass="FirstViewController" sceneMemberID="viewController">
@@ -61,7 +61,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" id="acW-dT-cKf"/>
-                    <navigationItem key="navigationItem" id="fse-Tf-j8T"/>
+                    <navigationItem key="navigationItem" title="快递查询" id="fse-Tf-j8T"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="expressCompany" destination="GfN-Ti-sKp" id="7rt-4r-43T"/>
@@ -184,7 +184,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="快递历史" id="LVW-ne-jvb"/>
-                    <navigationItem key="navigationItem" id="w1X-la-lpa"/>
+                    <navigationItem key="navigationItem" title="快递历史" id="w1X-la-lpa"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1kc-wS-8ee" userLabel="First Responder" sceneMemberID="firstResponder"/>

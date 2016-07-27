@@ -328,5 +328,15 @@
     
     return self.expressIndex;
 }
-
+//点击行打电话
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSArray* expressXX = self.expressArray[indexPath.section];
+    ExpressPhoneNum* expressXXX = expressXX[indexPath.row];
+    NSString* expressPhoneNumber = expressXXX.expressNum;
+    NSMutableString* str = [[NSMutableString alloc]initWithFormat:@"tel:%@",expressPhoneNumber];
+    UIWebView* callWebView = [[UIWebView alloc]init];
+    [callWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:str]]];
+    [self.view addSubview:callWebView];
+    NSLog(@"打电话啊！");
+}
 @end
