@@ -15,6 +15,7 @@
 @end
 
 @implementation ExpressTracesViewController
+@synthesize tableView;
 
 NSString* shipperCode;//快递名称
 NSString* logisticCode;//快递单号
@@ -38,94 +39,88 @@ NSArray* expressTraces;//快递轨迹
 }
 
 #pragma mark - Table view data source
-
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 1;
+    //分成两个Section
+    //section 1:To show the title
+    //Section 2:To show the traces
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
+    if (section == 0) {
+        return 1;
+    }
     return [expressTraces count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell* cell;
+    //1. 返回快递名称 单号数据
     if (indexPath.section == 0) {
         static NSString* cellIndentifier = @"UITableViewIndentifierKey";
-        UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:cellIndentifier];
+        cell = [self.tableView dequeueReusableCellWithIdentifier:cellIndentifier];
         if (!cell) {
             cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIndentifier];
             cell.textLabel.text = shipperCode;
             cell.detailTextLabel.text = logisticCode;
             cell.imageView.image = [UIImage imageNamed:@"bule"];
         }
+    }else if (indexPath.section == 1){
+        //2. 返回快递的轨迹
+        /*
+        //实在没辙了，不知道为什么还是不能正确的将值复制到Label和textView当中
+        static NSString* cellIndentifier2 = @"UITableViewCellTrace";
+        cell = [self.tableView dequeueReusableCellWithIdentifier:cellIndentifier2];
+        if (!cell) {
+            cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIndentifier2];
+        }
+        
+        UILabel* secondsLabel = (UILabel *)[cell viewWithTag:100];
+        UILabel* dayLabel = (UILabel *)[cell viewWithTag:101];
+        UITextView* tracesInfo = (UITextView *)[cell viewWithTag:102];
+        NSDictionary* traces = expressTraces[indexPath.row];
+        NSString* tracesInfoString = [traces objectForKey:@"AcceptStation"];//得到物流轨迹
+        NSString* timeInfoString = [traces objectForKey:@"AcceptTime"];//获得物流时间
+        NSString* secondsString = [timeInfoString substringWithRange:NSMakeRange(11, 5)];//获得小时和分钟
+        NSString* dayString = [timeInfoString substringToIndex:10];//获得年月日
+        NSLog(@"物流轨迹：%@",tracesInfoString);
+        //物流轨迹：【到件】快件已到达【贵州遵义公司】
+        NSLog(@"物流时间：%@",dayString);
+        
+        secondsLabel.text = secondsString;
+        dayLabel.text = dayString;
+        tracesInfo.text = @"hello world";
+        NSLog(@"view_label信息：%@",tracesInfo.text);
+        //view_label信息：(null)
+        NSLog(@"view_label时间：%@",dayLabel.text);
+        */
+        static NSString* cellIndentifier = @"UITabelViewCellTracesSystem";
+        cell = [self.tableView dequeueReusableCellWithIdentifier:cellIndentifier];
+        if (!cell) {
+            cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIndentifier];
+        }
+        NSDictionary* traces = expressTraces[indexPath.row];
+        NSString* tracesInfoString = [traces objectForKey:@"AcceptStation"];//得到物流轨迹
+        NSString* timeInfoString = [traces objectForKey:@"AcceptTime"];//获得物流时间
+        NSString* secondsString = [timeInfoString substringWithRange:NSMakeRange(11, 5)];//获得小时和分钟
+        NSString* dayString = [timeInfoString substringToIndex:10];//获得年月日
+        cell.textLabel.text = timeInfoString;
+        cell.detailTextLabel.text = tracesInfoString;
+        cell.imageView.image = [UIImage imageNamed:@"bule"];
+        
+        cell.detailTextLabel.font = [UIFont fontWithName:@"Helvetica"  size:11];
+        cell.detailTextLabel.lineBreakMode = UILineBreakModeWordWrap;
+        cell.detailTextLabel.numberOfLines = 0;
+        
+        cell.textLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:15];
+        cell.textLabel.textColor = [UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0];
+
     }
-    static NSString* cellIndentifier = @"UITableViewCellTrace";
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:cellIndentifier];
-    if (!cell) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIndentifier];
-    }
-    UILabel* secondsLabel = (UILabel *)[cell viewWithTag:100];
-    UILabel* dayLabel = (UILabel *)[cell viewWithTag:101];
-    UITextView* tracesInfo = (UITextView *)[cell viewWithTag:102];
-    
-    NSDictionary* traces = expressTraces[indexPath.row];
-    NSString* tracesInfoString = [traces objectForKey:@"AcceptStation"];//得到物流轨迹
-    NSString* timeInfoString = [traces objectForKey:@"AcceptTime"];//获得物流时间
-    NSString* secondsString = [timeInfoString substringWithRange:NSMakeRange(11, 5)];//获得小时和分钟
-    NSString* dayString = [timeInfoString substringToIndex:10];//获得年月日
-    
-    secondsLabel.text = secondsString;
-    dayLabel.text = dayString;
-    tracesInfo.text = tracesInfoString;
-    
     return cell;
 }
-
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 70;
 }
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

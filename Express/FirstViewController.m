@@ -10,10 +10,13 @@
 #import "AFNetworking.h"
 #import "MF_Base64Additions.h"
 #import "MD5.h"
+#import "ExpressInfo.h"
+#import "ExpressTracesViewController.h"
 
 #define eBusinessID @"1261753"
 #define appKey @"d715f778-086b-4a25-95be-59dff451abab"
 #define reqURL @"http://api.kdniao.cc/Ebusiness/EbusinessOrderHandle.aspx"
+#define systemBlue [UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0]
 
 @interface FirstViewController ()<UITextFieldDelegate>
 @property (strong, nonatomic) IBOutlet UITextField *expressForUser;
@@ -29,6 +32,8 @@
     self.expressForUser.delegate = self;
     self.expressNum.delegate = self;
     self.expressCompany.delegate = self;
+    
+    self.navigationItem.title = @"快递查询";
     
     //添加手势，点击屏幕其他区域关闭键盘
     UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc]initWithTarget:self
@@ -65,14 +70,23 @@
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSLog(@"请求成功：%@",responseObject);
         NSDictionary *json = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:nil];
+    //3. 获得网络数据赋值给ExpressInfo对象
         NSMutableArray* expressTraces = [[NSMutableArray alloc]init];
         for (NSDictionary* traces in [json objectForKey:@"Traces"]) {
-            [expressTraces addObject:traces];
+            [expressTraces insertObject:traces atIndex:0];
         }
-        NSDictionary* traces = expressTraces[3];
-        NSString* traces2 = [traces objectForKey:@"AcceptTime"];
-        NSLog(@"轨迹：%@",[traces2 substringToIndex:10]);//获得2016-07-23
-        NSLog(@"轨迹：%@",[traces2 substringWithRange:NSMakeRange(11, 5)]);//获得20：53
+        NSString* shipperCode = [json objectForKey:@"ShipperCode"];
+        NSString* logisticCode = [json objectForKey:@"LogisticCode"];
+        NSString* expressForUser = self.expressForUser.text;
+        
+        ExpressInfo* express = [[ExpressInfo alloc]initWitfShipperCode:shipperCode andlogisticCode:logisticCode andexpressForUser:expressForUser andexpressTraces:expressTraces];
+    //4. 传递数据给ExpresstracesViewController
+        ExpressTracesViewController* expressTracesVC = [[ExpressTracesViewController alloc]init];
+        expressTracesVC.express = express;
+        self.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:expressTracesVC animated:YES];
+        self.hidesBottomBarWhenPushed = NO;
+        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"请求失败：%@",error.description);
     }];
