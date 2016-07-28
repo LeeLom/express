@@ -21,7 +21,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W72-Q5-gGB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1564.5" y="-352.5"/>
+            <point key="canvasLocation" x="-1780.5" y="-344.5"/>
         </scene>
         <!--快递查询-->
         <scene sceneID="hNz-n2-bh7">

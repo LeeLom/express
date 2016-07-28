@@ -7,6 +7,7 @@
 //
 
 #import "ChooseExpressViewController.h"
+#import "FirstViewController.h"
 
 @interface ChooseExpressViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *tableview;
@@ -113,12 +114,26 @@ NSArray* expressComInlandIndex;
     cell.imageView.image = [UIImage imageNamed:@"bule"];
     NSArray* arrayTmp = expressComInland[indexPath.section];
     cell.textLabel.text = arrayTmp[indexPath.row];
-    NSLog(@"返回啊返回");
 
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSArray* arrayTmp = expressComInland[indexPath.section];
+    NSString* expressComName = arrayTmp[indexPath.row];
+    NSLog(@"%@",expressComName);
+    FirstViewController* vc = [self.navigationController.viewControllers objectAtIndex:self.navigationController.viewControllers.count-2];
+    vc.expressComName = expressComName;
+    NSLog(@"%@",vc.expressComName);
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+#pragma mark 返回每组的头标题
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    return expressComInlandIndex[section];
+}
+#pragma mark 返回每组标题索引
+-(NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView{
+    
+    return expressComInlandIndex;
+}
 @end
