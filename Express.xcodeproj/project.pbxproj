@@ -17,6 +17,7 @@
 		E617B40D1D447A8100701817 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E617B40B1D447A8100701817 /* LaunchScreen.storyboard */; };
 		E617B41A1D44973100701817 /* ExpressPhoneNumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E617B4191D44973100701817 /* ExpressPhoneNumViewController.m */; };
 		E617B41E1D44991900701817 /* ExpressPhoneNum.m in Sources */ = {isa = PBXBuildFile; fileRef = E617B41D1D44991900701817 /* ExpressPhoneNum.m */; };
+		E639E67D1D49BD7D004C4D1A /* ChooseExpressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E639E67C1D49BD7D004C4D1A /* ChooseExpressViewController.m */; };
 		E6C8F9BD1D47321300E52D0E /* MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C8F9BC1D47321300E52D0E /* MD5.m */; };
 		E6C8F9C31D473A3200E52D0E /* MF_Base64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C8F9C21D473A3200E52D0E /* MF_Base64Additions.m */; };
 		E6C8F9C61D4777BA00E52D0E /* ExpressInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C8F9C51D4777BA00E52D0E /* ExpressInfo.m */; };
@@ -42,6 +43,8 @@
 		E617B4191D44973100701817 /* ExpressPhoneNumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExpressPhoneNumViewController.m; path = Controller/ExpressPhoneNumViewController.m; sourceTree = "<group>"; };
 		E617B41C1D44991900701817 /* ExpressPhoneNum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExpressPhoneNum.h; path = Model/ExpressPhoneNum.h; sourceTree = "<group>"; };
 		E617B41D1D44991900701817 /* ExpressPhoneNum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExpressPhoneNum.m; path = Model/ExpressPhoneNum.m; sourceTree = "<group>"; };
+		E639E67B1D49BD7D004C4D1A /* ChooseExpressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChooseExpressViewController.h; path = Controller/ChooseExpressViewController.h; sourceTree = "<group>"; };
+		E639E67C1D49BD7D004C4D1A /* ChooseExpressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChooseExpressViewController.m; path = Controller/ChooseExpressViewController.m; sourceTree = "<group>"; };
 		E6C8F9BB1D47321300E52D0E /* MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MD5.h; path = Model/MD5.h; sourceTree = "<group>"; };
 		E6C8F9BC1D47321300E52D0E /* MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MD5.m; path = Model/MD5.m; sourceTree = "<group>"; };
 		E6C8F9C11D473A3200E52D0E /* MF_Base64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MF_Base64Additions.h; path = Model/MF_Base64Additions.h; sourceTree = "<group>"; };
@@ -135,6 +138,8 @@
 				E617B4191D44973100701817 /* ExpressPhoneNumViewController.m */,
 				E6C8F9C71D47870200E52D0E /* ExpressTracesViewController.h */,
 				E6C8F9C81D47870200E52D0E /* ExpressTracesViewController.m */,
+				E639E67B1D49BD7D004C4D1A /* ChooseExpressViewController.h */,
+				E639E67C1D49BD7D004C4D1A /* ChooseExpressViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -285,6 +290,7 @@
 				E617B4021D447A8100701817 /* FirstViewController.m in Sources */,
 				E6C8F9C31D473A3200E52D0E /* MF_Base64Additions.m in Sources */,
 				E617B3FC1D447A8100701817 /* main.m in Sources */,
+				E639E67D1D49BD7D004C4D1A /* ChooseExpressViewController.m in Sources */,
 				E617B41A1D44973100701817 /* ExpressPhoneNumViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

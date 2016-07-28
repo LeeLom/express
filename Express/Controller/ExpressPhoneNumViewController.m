@@ -68,8 +68,8 @@
     ExpressPhoneNum* express6 = [[ExpressPhoneNum alloc]initPhoneNum:@"天天快递" andNum:@"4001-888-888"];
     ExpressPhoneNum* express7 = [[ExpressPhoneNum alloc]initPhoneNum:@"宅急送" andNum:@"400-6789-000"];
     ExpressPhoneNum* express8 = [[ExpressPhoneNum alloc]initPhoneNum:@"德邦" andNum:@"95353 "];
-    ExpressPhoneNum* express9 = [[ExpressPhoneNum alloc]initPhoneNum:@"百世快递快递" andNum:@"400-956-5656"];
-    ExpressPhoneNum* express10 = [[ExpressPhoneNum alloc]initPhoneNum:@"邮政包裹/挂号信" andNum:@"11185"];
+    ExpressPhoneNum* express9 = [[ExpressPhoneNum alloc]initPhoneNum:@"百世快递" andNum:@"400-956-5656"];
+    ExpressPhoneNum* express10 = [[ExpressPhoneNum alloc]initPhoneNum:@"邮政包裹" andNum:@"11185"];
     ExpressPhoneNum* express11 = [[ExpressPhoneNum alloc]initPhoneNum:@"全峰快递" andNum:@"400-100-0001"];
     self.expressHot = [[NSArray alloc]initWithObjects:express0,express1,express2,express3,express4,express5,
                      express6,express7,express8,express9,express10,express11, nil];
@@ -257,7 +257,8 @@
     self.expressArray = [[NSArray alloc]initWithObjects:self.expressHot,self.expressA,self.expressB,self.expressC,
                          self.expressD,self.expressE,self.expressF,self.expressG,self.expressH,self.expressJ,
                          self.expressK,self.expressL,self.expressM,self.expressN,self.expressO,self.expressP,
-                         self.expressT,self.expressU,self.expressW,self.expressX,self.expressY,self.expressZ, nil];
+                         self.expressQ,self.expressR,self.expressS,self.expressT,self.expressU,self.expressW,
+                         self.expressX,self.expressY,self.expressZ, nil];
     self.expressIndex = [[NSArray alloc]initWithObjects:@"热门",@"A",@"B",@"C",@"D",@"E",@"F",@"G",@"H",@"J",
                          @"K",@"L",@"M",@"N",@"O",@"P",@"Q",@"R",@"S",@"T",@"U",@"W",@"X",@"Y",@"Z",nil];
     /*

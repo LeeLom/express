@@ -13,6 +13,7 @@
 #import "ExpressInfo.h"
 #import "ExpressTracesViewController.h"
 
+
 #define eBusinessID @"1261753"
 #define appKey @"d715f778-086b-4a25-95be-59dff451abab"
 #define reqURL @"http://api.kdniao.cc/Ebusiness/EbusinessOrderHandle.aspx"
@@ -98,6 +99,13 @@
     [self.expressNum resignFirstResponder];
     [self.expressCompany resignFirstResponder];
     
+}
+- (IBAction)chooseExpressCompany:(id)sender {
+    ExpressTracesViewController* vc = [[ExpressTracesViewController alloc]init];
+    self.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:NO];
+    self.hidesBottomBarWhenPushed = NO;
+    [self.expressCompany resignFirstResponder];
 }
                           
 @end
