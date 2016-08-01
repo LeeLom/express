@@ -13,6 +13,7 @@
 #import "ExpressInfo.h"
 #import "ExpressTracesViewController.h"
 #import "ChooseExpressViewController.h"
+#import "ScanQRCodeViewController.h"
 
 
 #define eBusinessID @"1261753"
@@ -136,5 +137,12 @@ NSString* logisticCodeUser;
     self.hidesBottomBarWhenPushed = NO;
     [self.expressCompany resignFirstResponder];
 }
-                          
+
+- (IBAction)QRCodeButtonClick:(id)sender {
+    ScanQRCodeViewController* vc = [[ScanQRCodeViewController alloc]init];
+    self.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:NO];
+    self.hidesBottomBarWhenPushed = NO;
+}
+
 @end
