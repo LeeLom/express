@@ -108,8 +108,8 @@ NSDictionary* expressNameAndCodeTrace;//快递字典
         NSDictionary* traces = expressTraces[indexPath.row];
         NSString* tracesInfoString = [traces objectForKey:@"AcceptStation"];//得到物流轨迹
         NSString* timeInfoString = [traces objectForKey:@"AcceptTime"];//获得物流时间
-        NSString* secondsString = [timeInfoString substringWithRange:NSMakeRange(11, 5)];//获得小时和分钟
-        NSString* dayString = [timeInfoString substringToIndex:10];//获得年月日
+        //NSString* secondsString = [timeInfoString substringWithRange:NSMakeRange(11, 5)];//获得小时和分钟
+        //NSString* dayString = [timeInfoString substringToIndex:10];//获得年月日
         cell.textLabel.text = timeInfoString;
         cell.detailTextLabel.text = tracesInfoString;
         cell.imageView.image = [UIImage imageNamed:@"bule"];
