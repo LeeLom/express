@@ -67,7 +67,7 @@
                     <navigationItem key="navigationItem" title="快递查询" id="fse-Tf-j8T">
                         <barButtonItem key="rightBarButtonItem" image="qrcode_tabbar_icon_qrcode" id="AjQ-1d-4Zr" userLabel="二维码">
                             <connections>
-                                <action selector="QRCodeButtonClick:" destination="9pv-A4-QxB" id="Z7l-En-Byd"/>
+                                <segue destination="tHd-Xe-Rba" kind="presentation" id="vDH-3j-ubd"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -112,7 +112,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DNp-hT-Bco" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-162.5" y="-112.5"/>
+            <point key="canvasLocation" x="-525.5" y="39.5"/>
         </scene>
         <!--快递历史-->
         <scene sceneID="5fG-dV-xdg">
@@ -233,7 +233,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="将二维码放入框内, 即可扫描二维码" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQD-xw-6p1" userLabel="customLabel">
                                 <rect key="frame" x="37" y="503" width="300" height="21"/>
@@ -255,11 +255,22 @@
                                     <action selector="openCameraClick:" destination="tHd-Xe-Rba" eventType="touchUpInside" id="C8Q-73-s5l"/>
                                 </connections>
                             </button>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kBt-zi-7A6" userLabel="Custom Bar">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem title="二维码" image="qrcode_tabbar_icon_qrcode" id="92T-Tr-13Y"/>
+                                    <tabBarItem title="条形码" image="qrcode_tabbar_icon_barcode" id="QpL-Cl-TTG"/>
+                                </items>
+                                <color key="barTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </tabBar>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="customBar" destination="kBt-zi-7A6" id="wtB-CM-evS"/>
                         <outlet property="customContainerView" destination="7ED-lM-Trp" id="Cum-JZ-HJu"/>
                         <outlet property="customLabel" destination="hQD-xw-6p1" id="RBQ-YW-1mK"/>
                         <outlet property="scanLineImageView" destination="gCO-bU-qqg" id="tGq-MR-ozd"/>
@@ -267,7 +278,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Esw-Vc-Jcs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-162.5" y="-994.5"/>
+            <point key="canvasLocation" x="-525.5" y="-699.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -295,6 +306,7 @@
     <resources>
         <image name="qrcode_border" width="51" height="51"/>
         <image name="qrcode_scanline_qrcode" width="218" height="170"/>
+        <image name="qrcode_tabbar_icon_barcode" width="40" height="40"/>
         <image name="qrcode_tabbar_icon_qrcode" width="40" height="40"/>
     </resources>
 </document>

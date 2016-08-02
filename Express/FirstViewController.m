@@ -138,11 +138,13 @@ NSString* logisticCodeUser;
     [self.expressCompany resignFirstResponder];
 }
 
+/*
 - (IBAction)QRCodeButtonClick:(id)sender {
     ScanQRCodeViewController* vc = [[ScanQRCodeViewController alloc]init];
     self.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:NO];
     self.hidesBottomBarWhenPushed = NO;
 }
+*/
 
 @end
