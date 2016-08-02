@@ -75,6 +75,14 @@ NSString* logisticCodeUser;
 -(void)viewDidAppear:(BOOL)animated{
     self.expressCompany.text = self.expressComName;
     shipperCodeUser = [expressNameAndCode objectForKey:self.expressComName];
+    NSNotificationCenter* nc = [NSNotificationCenter defaultCenter];
+    [nc addObserver:self selector:@selector(haddleQRCode:) name:@"do" object:nil];
+}
+-(void)haddleQRCode:(NSNotification*)sender{
+    //self.expressNum.text = (NSString* )sender;
+    NSDictionary* dc = sender.userInfo;
+    NSLog(@"sender:%@",[dc objectForKey:@"userInfo"]);
+    self.expressNum.text = [dc objectForKey:@"userInfo"];
 }
 - (IBAction)expressSearch:(id)sender {
     //1.编写上传参数

@@ -8,6 +8,7 @@
 
 #import "ScanQRCodeViewController.h"
 #import <AVFoundation/AVFoundation.h>
+#import "FirstViewController.h"
 
 @interface ScanQRCodeViewController ()<UITabBarDelegate,AVCaptureMetadataOutputObjectsDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 @property (strong, nonatomic) AVCaptureDevice* device;
@@ -200,8 +201,22 @@
     if (object == nil) return;
     // 只要扫描到结果就会调用
     self.customLabel.text = object.stringValue;
-    
+    NSDictionary* userInfo = [NSDictionary dictionaryWithObject:object.stringValue forKey:@"userInfo"];
     [self clearLayers];
+    [self dismissViewControllerAnimated:YES completion:^{
+        [[NSNotificationCenter defaultCenter]postNotificationName:@"do" object:self userInfo:userInfo];
+    }];
+    /*
+     将secendView dismissViewControllerAnimated掉，然后自动注册一个名为do的通知
+     注册了这个名为的通知，你就可以在任何.m文件里面通过以下代码调用到了：
+     NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+     [nc addObserver:self
+     selector:@selector(handleColorChange:)
+     name:@"do"
+     object:nil];
+     上面的代码的意思就是，先找到已经注册过的名为do的通知，然后再自动调用handleColorChange去处理
+     */
+    
     
     // [self.previewLayer removeFromSuperlayer];
     
