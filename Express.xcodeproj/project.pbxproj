@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		51B0258E56F3499313BE2447 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF153DAAB3C3802B8FE512E /* libPods.a */; };
 		E606C3721D4F03AA00BE4A07 /* ScanQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E606C3711D4F03AA00BE4A07 /* ScanQRCodeViewController.m */; };
+		E60C1BFC1D50602C005A9A6E /* ExpressHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E60C1BFB1D50602C005A9A6E /* ExpressHistoryViewController.m */; };
 		E617B3FC1D447A8100701817 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E617B3FB1D447A8100701817 /* main.m */; };
 		E617B3FF1D447A8100701817 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E617B3FE1D447A8100701817 /* AppDelegate.m */; };
 		E617B4021D447A8100701817 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E617B4011D447A8100701817 /* FirstViewController.m */; };
@@ -30,6 +31,8 @@
 		2F083285BD1B91DA42DEE32C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E606C3701D4F03AA00BE4A07 /* ScanQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScanQRCodeViewController.h; path = Controller/ScanQRCodeViewController.h; sourceTree = "<group>"; };
 		E606C3711D4F03AA00BE4A07 /* ScanQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScanQRCodeViewController.m; path = Controller/ScanQRCodeViewController.m; sourceTree = "<group>"; };
+		E60C1BFA1D50602C005A9A6E /* ExpressHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExpressHistoryViewController.h; path = Controller/ExpressHistoryViewController.h; sourceTree = "<group>"; };
+		E60C1BFB1D50602C005A9A6E /* ExpressHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExpressHistoryViewController.m; path = Controller/ExpressHistoryViewController.m; sourceTree = "<group>"; };
 		E617B3F71D447A8100701817 /* Express.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Express.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E617B3FB1D447A8100701817 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E617B3FD1D447A8100701817 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -145,6 +148,8 @@
 				E639E67C1D49BD7D004C4D1A /* ChooseExpressViewController.m */,
 				E606C3701D4F03AA00BE4A07 /* ScanQRCodeViewController.h */,
 				E606C3711D4F03AA00BE4A07 /* ScanQRCodeViewController.m */,
+				E60C1BFA1D50602C005A9A6E /* ExpressHistoryViewController.h */,
+				E60C1BFB1D50602C005A9A6E /* ExpressHistoryViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -289,6 +294,7 @@
 				E617B4051D447A8100701817 /* SecondViewController.m in Sources */,
 				E6C8F9C61D4777BA00E52D0E /* ExpressInfo.m in Sources */,
 				E617B3FF1D447A8100701817 /* AppDelegate.m in Sources */,
+				E60C1BFC1D50602C005A9A6E /* ExpressHistoryViewController.m in Sources */,
 				E6C8F9BD1D47321300E52D0E /* MD5.m in Sources */,
 				E617B41E1D44991900701817 /* ExpressPhoneNum.m in Sources */,
 				E6C8F9C91D47870200E52D0E /* ExpressTracesViewController.m in Sources */,

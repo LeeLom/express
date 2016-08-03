@@ -8,7 +8,7 @@
 
 #import "ExpressTracesViewController.h"
 
-@interface ExpressTracesViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface ExpressTracesViewController ()<UITableViewDelegate,UITableViewDataSource,UIAlertViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 
@@ -23,10 +23,36 @@ NSString* expressForUser;//快递备注
 NSArray* expressTraces;//快递轨迹
 NSDictionary* expressNameAndCodeTrace;//快递字典
 
+//利用plist实现数据的持久化存储
+-(void)saveExpressTraces{
+    //1. 获得文件路径
+    NSString* path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
+    NSString* fileName = [path stringByAppendingPathComponent:@"123.plist"];
+    //2. 获得本单快递信息
+    NSArray* array = [NSArray arrayWithObjects:shipperCode,logisticCode,expressForUser,expressTraces, nil];
+    //3. 获取已经保存的快递信息
+    NSMutableArray* arrayCollection = [[NSMutableArray alloc]init];
+    NSArray *result = [ NSArray arrayWithContentsOfFile:fileName];
+    for (NSArray* obj in result) {
+        [arrayCollection addObject:obj];
+    }
+    //4. 将本单快递信息追加到已有的信息中
+    [arrayCollection addObject:array];
+    //5. 存储
+    [arrayCollection writeToFile:fileName atomically:YES];
+    //6. 提示框
+    UIAlertView* alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"保存成功" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+    [alert show];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"保存"
+                                                                    style:UIBarButtonItemStylePlain
+                                                                    target:self
+                                                                    action:@selector(saveExpressTraces)];
     
     shipperCode = self.express.shipperCode;
     logisticCode = self.express.logisticCode;
@@ -113,11 +139,11 @@ NSDictionary* expressNameAndCodeTrace;//快递字典
         cell.textLabel.text = timeInfoString;
         cell.detailTextLabel.text = tracesInfoString;
         cell.imageView.image = [UIImage imageNamed:@"bule"];
-        
-        cell.detailTextLabel.font = [UIFont fontWithName:@"Helvetica"  size:11];
+        //调整UILabel自动换行
         cell.detailTextLabel.lineBreakMode = UILineBreakModeWordWrap;
         cell.detailTextLabel.numberOfLines = 0;
         
+        cell.detailTextLabel.font = [UIFont fontWithName:@"Helvetica"  size:11];
         cell.textLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:15];
         cell.textLabel.textColor = [UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0];
 
