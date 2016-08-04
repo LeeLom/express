@@ -93,7 +93,9 @@ NSArray* expressTraces2;//快递轨迹
     }
     
     return cell;
- 
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 70;
 }
 
 @end
