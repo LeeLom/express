@@ -73,14 +73,18 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="companyTextfiled" destination="GfN-Ti-sKp" id="Qrj-fP-URr"/>
                         <outlet property="expressCompany" destination="GfN-Ti-sKp" id="7rt-4r-43T"/>
                         <outlet property="expressForUser" destination="bS9-N4-hod" id="ssj-V2-oJn"/>
                         <outlet property="expressNum" destination="GKD-VH-YTL" id="PCB-2p-p7I"/>
+                        <outlet property="nameTextfiled" destination="bS9-N4-hod" id="k1N-k2-E9y"/>
+                        <outlet property="numberTextfiled" destination="GKD-VH-YTL" id="cod-Y7-nxd"/>
+                        <outlet property="searchButton" destination="XKb-Tf-OK6" id="P7t-2R-nab"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1098.5" y="-401.5"/>
+            <point key="canvasLocation" x="-1150.5" y="-344.5"/>
         </scene>
         <!--Choose Express View Controller-->
         <scene sceneID="RXY-c5-JSI">
@@ -112,7 +116,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DNp-hT-Bco" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-525.5" y="39.5"/>
+            <point key="canvasLocation" x="-421.5" y="175.5"/>
         </scene>
         <!--快递历史-->
         <scene sceneID="5fG-dV-xdg">
@@ -130,7 +134,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kbb-EQ-h8o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1580.5" y="407.5"/>
+            <point key="canvasLocation" x="-1760.5" y="407.5"/>
         </scene>
         <!--快递历史-->
         <scene sceneID="ZWh-f5-Q1q">
@@ -159,7 +163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jbD-BM-CgE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1062.5" y="399.5"/>
+            <point key="canvasLocation" x="-1150.5" y="407.5"/>
         </scene>
         <!--快递电话-->
         <scene sceneID="EZE-Om-lc6">
@@ -177,7 +181,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aUf-uf-ixf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1552.5" y="1252.5"/>
+            <point key="canvasLocation" x="-1760.5" y="1260.5"/>
         </scene>
         <!--快递电话-->
         <scene sceneID="WiR-pe-c1B">
@@ -207,7 +211,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qdB-Dx-m2D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1008.5" y="1252.5"/>
+            <point key="canvasLocation" x="-1150.5" y="1268.5"/>
         </scene>
         <!--ScanQR Code View Controller-->
         <scene sceneID="Rf8-Cg-ACX">
@@ -276,7 +280,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Esw-Vc-Jcs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-525.5" y="-699.5"/>
+            <point key="canvasLocation" x="-421.5" y="-571.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

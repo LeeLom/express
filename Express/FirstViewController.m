@@ -25,6 +25,10 @@
 @property (strong, nonatomic) IBOutlet UITextField *expressForUser;//快递备注
 @property (strong, nonatomic) IBOutlet UITextField *expressNum;//快递单号
 @property (strong, nonatomic) IBOutlet UITextField *expressCompany;//快递公司
+@property (strong, nonatomic) IBOutlet UIButton *searchButton;
+@property (strong, nonatomic) IBOutlet UITextField *nameTextfiled;
+@property (strong, nonatomic) IBOutlet UITextField *numberTextfiled;
+@property (strong, nonatomic) IBOutlet UITextField *companyTextfiled;
 
 @end
 
@@ -47,6 +51,21 @@ NSString* logisticCodeUser;
                                                                              action:@selector(hiddenKeyboard)];
     gesture.numberOfTapsRequired = 1;
     [self.view addGestureRecognizer:gesture];
+    //美化查询按钮
+    [self.searchButton.layer setMasksToBounds:YES];
+    [self.searchButton.layer setCornerRadius:10.0];//设置矩形的四个圆角半径
+    [self.searchButton.layer setBorderWidth:1.0];//设置边框宽度
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    CGColorRef colorref = CGColorCreate(colorSpace,(CGFloat[]){ 0, 122.0/255.0, 1.0, 1.0 });
+    [self.searchButton.layer setBorderColor:colorref];
+    [self.searchButton setTitleColor:systemBlue forState:UIControlStateHighlighted];
+    self.searchButton.backgroundColor = [UIColor whiteColor];
+    
+    //美化备注textfiled
+    [self beautifulTextfiled:self.nameTextfiled];
+    [self beautifulTextfiled:self.numberTextfiled];
+    [self beautifulTextfiled:self.companyTextfiled];
+    
     expressNameAndCode = [NSDictionary dictionaryWithObjectsAndKeys:@"AXD",@"安信达快递",@"AYCA",@"澳邮专线",@"BQXHM",@"北青小红帽",
                           @"BFDF",@"百福东方",@"BTWL",@"百世快运",@"HTKY",@"百世快递",@"CNPEX",@"CNPEX中邮快递",@"CCES",@"CCES快递",
                           @"COE",@"COE东方快递",@"CJKD",@"城际快递",@"CITY100",@"城市100",@"CSCY",@"长沙创一",@"DBL",@"德邦",@"DSWL",
@@ -66,6 +85,18 @@ NSString* logisticCodeUser;
                           @"义达国际物流",@"YFEX",@"越丰物流",@"YFHEX",@"原飞航物流",@"YFSD",@"亚风快递",@"YTKD",@"运通快递",@"YTO",@"圆通速递",
                           @"YXKD",@"亿翔快递",@"YZPY",@"邮政平邮/小包",@"ZENY",@"增益快递",@"ZJS",@"宅急送",@"ZTE",@"众通快递",@"ZTKY",@"中铁快运",
                           @"ZTO",@"中通速递",@"ZTWL",@"中铁物流",@"ZYWL",@"中邮物流", nil];
+}
+//美化查询按钮
+-(void)beautifulTextfiled:(UITextField *)tf{
+    //美化查询按钮
+    [tf.layer setMasksToBounds:YES];
+    [tf.layer setCornerRadius:10.0];//设置矩形的四个圆角半径
+    [tf.layer setBorderWidth:1.0];//设置边框宽度
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    CGColorRef colorref = CGColorCreate(colorSpace,(CGFloat[]){ 0, 122.0/255.0, 1.0, 1.0 });
+    [tf.layer setBorderColor:colorref];
+    tf.backgroundColor = [UIColor whiteColor];
+    
 }
 
 - (void)didReceiveMemoryWarning {

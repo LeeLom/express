@@ -41,13 +41,10 @@
     if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) return;
     // 2. 创建图片选择控制器
     UIImagePickerController *ipc = [[UIImagePickerController alloc] init];
-    
     ipc.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-    
-    // 4.设置代理
+    // 3.设置代理
     ipc.delegate = self;
-    
-    // 5.modal出这个控制器
+    // 4.modal出这个控制器
     [self presentViewController:ipc animated:YES completion:nil];
 }
 - (void)viewDidLoad {
@@ -67,23 +64,18 @@
     // 1.取出选中的图片
     UIImage *pickImage = info[UIImagePickerControllerOriginalImage];
     NSData *imageData = UIImagePNGRepresentation(pickImage);
-    
     CIImage *ciImage = [CIImage imageWithData:imageData];
-    
     // 2.从选中的图片中读取二维码数据
     // 2.1创建一个探测器
     CIDetector *detector = [CIDetector detectorOfType:CIDetectorTypeQRCode context:nil options:@{CIDetectorAccuracy: CIDetectorAccuracyLow}];
-    
     // 2.2利用探测器探测数据
     NSArray *feature = [detector featuresInImage:ciImage];
-    
     // 2.3取出探测到的数据
     for (CIQRCodeFeature *result in feature) {
         NSLog(@"%@",result.messageString);
         NSString *urlStr = result.messageString;
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlStr]];
     }
-    
     // 注意: 如果实现了该方法, 当选中一张图片时系统就不会自动关闭相册控制器
     [picker dismissViewControllerAnimated:YES completion:nil];
 }
@@ -197,7 +189,6 @@
     //  if (metadataObjects.count > 0) {
     // id 类型不能点语法,所以要先去取出数组中对象
     AVMetadataMachineReadableCodeObject *object = [metadataObjects lastObject];
-    
     if (object == nil) return;
     // 只要扫描到结果就会调用
     self.customLabel.text = object.stringValue;
@@ -222,7 +213,6 @@
     
     // 2.对扫描到的二维码进行描边
     AVMetadataMachineReadableCodeObject *obj = (AVMetadataMachineReadableCodeObject *)[self.previewLayer transformedMetadataObjectForMetadataObject:object];
-    
     [self drawLine:obj];
     // 停止扫描
     //        [self.session stopRunning];
