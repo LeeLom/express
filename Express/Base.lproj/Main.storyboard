@@ -9,7 +9,7 @@
         <scene sceneID="dBK-kC-hJw">
             <objects>
                 <navigationController id="4Jw-fq-FMT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="快递查询" selectedImage="searchSymbol" id="iKG-Ht-0vd"/>
+                    <tabBarItem key="tabBarItem" title="快递查询" image="search4" id="iKG-Ht-0vd"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ix3-Ca-aOP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -122,7 +122,7 @@
         <scene sceneID="5fG-dV-xdg">
             <objects>
                 <navigationController id="DSb-mf-07l" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="快递历史" selectedImage="historySymbol" id="WpY-vs-JrQ"/>
+                    <tabBarItem key="tabBarItem" title="快递历史" image="car4" id="WpY-vs-JrQ"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qhf-hE-DLv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -169,7 +169,7 @@
         <scene sceneID="EZE-Om-lc6">
             <objects>
                 <navigationController id="3MI-Bv-A6E" customClass="Express" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="快递电话" id="fgP-xg-Zey"/>
+                    <tabBarItem key="tabBarItem" title="快递电话" image="phone4" id="fgP-xg-Zey"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yeH-ZA-9rr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -306,11 +306,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="historySymbol" width="49" height="40"/>
+        <image name="car4" width="20" height="16"/>
+        <image name="phone4" width="21" height="21"/>
         <image name="qrcode_border" width="51" height="51"/>
         <image name="qrcode_scanline_qrcode" width="218" height="170"/>
         <image name="qrcode_tabbar_icon_barcode" width="40" height="40"/>
         <image name="qrcode_tabbar_icon_qrcode" width="40" height="40"/>
-        <image name="searchSymbol" width="49" height="50"/>
+        <image name="search4" width="20" height="20"/>
     </resources>
 </document>

@@ -45,6 +45,12 @@ NSString* logisticCodeUser;
     self.expressNum.delegate = self;
     self.expressCompany.delegate = self;
     self.navigationItem.title = @"快递查询";
+    
+    UIImageView* imgView = [[UIImageView alloc]initWithFrame:self.view.frame];
+    imgView.image = [UIImage imageNamed:@"background2"];
+    [self.view addSubview:imgView];
+    [self.view sendSubviewToBack:imgView];
+    //self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background2"]];
 
     //添加手势，点击屏幕其他区域关闭键盘
     UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc]initWithTarget:self
@@ -95,7 +101,8 @@ NSString* logisticCodeUser;
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
     CGColorRef colorref = CGColorCreate(colorSpace,(CGFloat[]){ 0, 122.0/255.0, 1.0, 1.0 });
     [tf.layer setBorderColor:colorref];
-    tf.backgroundColor = [UIColor whiteColor];
+    tf.backgroundColor = [UIColor clearColor];
+    
     
 }
 
