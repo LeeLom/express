@@ -65,7 +65,7 @@ NSString* logisticCodeUser;
     CGColorRef colorref = CGColorCreate(colorSpace,(CGFloat[]){ 0, 122.0/255.0, 1.0, 1.0 });
     [self.searchButton.layer setBorderColor:colorref];
     [self.searchButton setTitleColor:systemBlue forState:UIControlStateHighlighted];
-    self.searchButton.backgroundColor = [UIColor whiteColor];
+    self.searchButton.backgroundColor = [UIColor clearColor];
     
     //美化备注textfiled
     [self beautifulTextfiled:self.nameTextfiled];
