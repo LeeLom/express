@@ -7,4 +7,5 @@
 * 实现对个人查询记录保存
 * 实现市场常见的国内与国际快递电话的查询与拨打
 * 运行截图
-![运行截图](http://upload-images.jianshu.io/upload_images/1156494-8769003c91cb54cd.gif?imageMogr2/auto-orient/strip)
+![运行截图]
+(http://upload-images.jianshu.io/upload_images/1156494-8769003c91cb54cd.gif?imageMogr2/auto-orient/strip)
