@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		51B0258E56F3499313BE2447 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF153DAAB3C3802B8FE512E /* libPods.a */; };
 		E606C3721D4F03AA00BE4A07 /* ScanQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E606C3711D4F03AA00BE4A07 /* ScanQRCodeViewController.m */; };
 		E60C1BFC1D50602C005A9A6E /* ExpressHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E60C1BFB1D50602C005A9A6E /* ExpressHistoryViewController.m */; };
 		E617B3FC1D447A8100701817 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E617B3FB1D447A8100701817 /* main.m */; };
@@ -19,15 +18,18 @@
 		E617B41A1D44973100701817 /* ExpressPhoneNumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E617B4191D44973100701817 /* ExpressPhoneNumViewController.m */; };
 		E617B41E1D44991900701817 /* ExpressPhoneNum.m in Sources */ = {isa = PBXBuildFile; fileRef = E617B41D1D44991900701817 /* ExpressPhoneNum.m */; };
 		E639E67D1D49BD7D004C4D1A /* ChooseExpressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E639E67C1D49BD7D004C4D1A /* ChooseExpressViewController.m */; };
+		E655F63D1F078E30003E0B00 /* emoji_tongue.json in Resources */ = {isa = PBXBuildFile; fileRef = E655F63C1F078E30003E0B00 /* emoji_tongue.json */; };
+		E655F6431F07912A003E0B00 /* EmojiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E655F6421F07912A003E0B00 /* EmojiViewController.m */; };
 		E6C8F9BD1D47321300E52D0E /* MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C8F9BC1D47321300E52D0E /* MD5.m */; };
 		E6C8F9C31D473A3200E52D0E /* MF_Base64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C8F9C21D473A3200E52D0E /* MF_Base64Additions.m */; };
 		E6C8F9C61D4777BA00E52D0E /* ExpressInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C8F9C51D4777BA00E52D0E /* ExpressInfo.m */; };
 		E6C8F9C91D47870200E52D0E /* ExpressTracesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C8F9C81D47870200E52D0E /* ExpressTracesViewController.m */; };
+		EF9103293FBF2E4562C5A318 /* libPods-Express.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB5400280A41273EEBA680E /* libPods-Express.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2DF153DAAB3C3802B8FE512E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F083285BD1B91DA42DEE32C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		464FD4CEBDA9691E91D6E093 /* Pods-Express.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Express.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Express/Pods-Express.debug.xcconfig"; sourceTree = "<group>"; };
+		DC513E8D08E15318F85726DD /* Pods-Express.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Express.release.xcconfig"; path = "Pods/Target Support Files/Pods-Express/Pods-Express.release.xcconfig"; sourceTree = "<group>"; };
 		E606C3701D4F03AA00BE4A07 /* ScanQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScanQRCodeViewController.h; path = Controller/ScanQRCodeViewController.h; sourceTree = "<group>"; };
 		E606C3711D4F03AA00BE4A07 /* ScanQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScanQRCodeViewController.m; path = Controller/ScanQRCodeViewController.m; sourceTree = "<group>"; };
 		E60C1BFA1D50602C005A9A6E /* ExpressHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExpressHistoryViewController.h; path = Controller/ExpressHistoryViewController.h; sourceTree = "<group>"; };
@@ -48,6 +50,9 @@
 		E617B41D1D44991900701817 /* ExpressPhoneNum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExpressPhoneNum.m; path = Model/ExpressPhoneNum.m; sourceTree = "<group>"; };
 		E639E67B1D49BD7D004C4D1A /* ChooseExpressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChooseExpressViewController.h; path = Controller/ChooseExpressViewController.h; sourceTree = "<group>"; };
 		E639E67C1D49BD7D004C4D1A /* ChooseExpressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChooseExpressViewController.m; path = Controller/ChooseExpressViewController.m; sourceTree = "<group>"; };
+		E655F63C1F078E30003E0B00 /* emoji_tongue.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = emoji_tongue.json; sourceTree = "<group>"; };
+		E655F6411F07912A003E0B00 /* EmojiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiViewController.h; sourceTree = "<group>"; };
+		E655F6421F07912A003E0B00 /* EmojiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiViewController.m; sourceTree = "<group>"; };
 		E6C8F9BB1D47321300E52D0E /* MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MD5.h; path = Model/MD5.h; sourceTree = "<group>"; };
 		E6C8F9BC1D47321300E52D0E /* MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MD5.m; path = Model/MD5.m; sourceTree = "<group>"; };
 		E6C8F9C11D473A3200E52D0E /* MF_Base64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MF_Base64Additions.h; path = Model/MF_Base64Additions.h; sourceTree = "<group>"; };
@@ -56,7 +61,7 @@
 		E6C8F9C51D4777BA00E52D0E /* ExpressInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExpressInfo.m; path = Model/ExpressInfo.m; sourceTree = "<group>"; };
 		E6C8F9C71D47870200E52D0E /* ExpressTracesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExpressTracesViewController.h; path = Controller/ExpressTracesViewController.h; sourceTree = "<group>"; };
 		E6C8F9C81D47870200E52D0E /* ExpressTracesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExpressTracesViewController.m; path = Controller/ExpressTracesViewController.m; sourceTree = "<group>"; };
-		FFDF3D313DDDC8BF5A6C090E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FFB5400280A41273EEBA680E /* libPods-Express.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Express.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,26 +69,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51B0258E56F3499313BE2447 /* libPods.a in Frameworks */,
+				EF9103293FBF2E4562C5A318 /* libPods-Express.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0D9E094416936F0F6FFC8A6A /* Pods */ = {
+		1E4CE724ED67FEA0E4876A33 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FFDF3D313DDDC8BF5A6C090E /* Pods.debug.xcconfig */,
-				2F083285BD1B91DA42DEE32C /* Pods.release.xcconfig */,
+				464FD4CEBDA9691E91D6E093 /* Pods-Express.debug.xcconfig */,
+				DC513E8D08E15318F85726DD /* Pods-Express.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		49385A3AF17BC9C81F15CDD2 /* Frameworks */ = {
+		444B2B50199D7EC34A0273D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2DF153DAAB3C3802B8FE512E /* libPods.a */,
+				FFB5400280A41273EEBA680E /* libPods-Express.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -93,8 +98,8 @@
 			children = (
 				E617B3F91D447A8100701817 /* Express */,
 				E617B3F81D447A8100701817 /* Products */,
-				0D9E094416936F0F6FFC8A6A /* Pods */,
-				49385A3AF17BC9C81F15CDD2 /* Frameworks */,
+				1E4CE724ED67FEA0E4876A33 /* Pods */,
+				444B2B50199D7EC34A0273D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +127,7 @@
 		E617B3FA1D447A8100701817 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E655F63C1F078E30003E0B00 /* emoji_tongue.json */,
 				E617B4061D447A8100701817 /* Main.storyboard */,
 				E617B40B1D447A8100701817 /* LaunchScreen.storyboard */,
 				E617B40E1D447A8100701817 /* Info.plist */,
@@ -145,6 +151,8 @@
 				E606C3711D4F03AA00BE4A07 /* ScanQRCodeViewController.m */,
 				E60C1BFA1D50602C005A9A6E /* ExpressHistoryViewController.h */,
 				E60C1BFB1D50602C005A9A6E /* ExpressHistoryViewController.m */,
+				E655F6411F07912A003E0B00 /* EmojiViewController.h */,
+				E655F6421F07912A003E0B00 /* EmojiViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -171,12 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E617B4111D447A8100701817 /* Build configuration list for PBXNativeTarget "Express" */;
 			buildPhases = (
-				694EA5DEE3EDBBCECB485C74 /* Check Pods Manifest.lock */,
+				B3043D1D9610A02C7A3AE1D5 /* [CP] Check Pods Manifest.lock */,
 				E617B3F31D447A8100701817 /* Sources */,
 				E617B3F41D447A8100701817 /* Frameworks */,
 				E617B3F51D447A8100701817 /* Resources */,
-				C91711D5FDD2167DDCCFC766 /* Embed Pods Frameworks */,
-				4204E3FC23C9E8907E9F4078 /* Copy Pods Resources */,
+				153268D86B90EAE92130DF80 /* [CP] Embed Pods Frameworks */,
+				6E668059F34F1FAC01F0EBC1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,6 +235,7 @@
 			files = (
 				E617B40D1D447A8100701817 /* LaunchScreen.storyboard in Resources */,
 				E617B40A1D447A8100701817 /* Assets.xcassets in Resources */,
+				E655F63D1F078E30003E0B00 /* emoji_tongue.json in Resources */,
 				E617B4081D447A8100701817 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,49 +243,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4204E3FC23C9E8907E9F4078 /* Copy Pods Resources */ = {
+		153268D86B90EAE92130DF80 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Express/Pods-Express-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		694EA5DEE3EDBBCECB485C74 /* Check Pods Manifest.lock */ = {
+		6E668059F34F1FAC01F0EBC1 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Express/Pods-Express-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C91711D5FDD2167DDCCFC766 /* Embed Pods Frameworks */ = {
+		B3043D1D9610A02C7A3AE1D5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -296,6 +305,7 @@
 				E6C8F9C31D473A3200E52D0E /* MF_Base64Additions.m in Sources */,
 				E617B3FC1D447A8100701817 /* main.m in Sources */,
 				E639E67D1D49BD7D004C4D1A /* ChooseExpressViewController.m in Sources */,
+				E655F6431F07912A003E0B00 /* EmojiViewController.m in Sources */,
 				E617B41A1D44973100701817 /* ExpressPhoneNumViewController.m in Sources */,
 				E606C3721D4F03AA00BE4A07 /* ScanQRCodeViewController.m in Sources */,
 			);
@@ -405,7 +415,7 @@
 		};
 		E617B4121D447A8100701817 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FFDF3D313DDDC8BF5A6C090E /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 464FD4CEBDA9691E91D6E093 /* Pods-Express.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Express/Info.plist;
@@ -417,7 +427,7 @@
 		};
 		E617B4131D447A8100701817 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F083285BD1B91DA42DEE32C /* Pods.release.xcconfig */;
+			baseConfigurationReference = DC513E8D08E15318F85726DD /* Pods-Express.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Express/Info.plist;

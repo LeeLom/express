@@ -114,7 +114,8 @@ NSArray* expressComInlandIndex;
     cell.imageView.image = [UIImage imageNamed:@"bule"];
     NSArray* arrayTmp = expressComInland[indexPath.section];
     cell.textLabel.text = arrayTmp[indexPath.row];
-
+    
+    
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

@@ -47,7 +47,7 @@ NSString* logisticCodeUser;
     self.navigationItem.title = @"快递查询";
     
     UIImageView* imgView = [[UIImageView alloc]initWithFrame:self.view.frame];
-    imgView.image = [UIImage imageNamed:@"background2"];
+    //imgView.image = [UIImage imageNamed:@"background2"];
     [self.view addSubview:imgView];
     [self.view sendSubviewToBack:imgView];
     //self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background2"]];

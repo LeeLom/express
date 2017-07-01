@@ -8,8 +8,12 @@
 
 #import "AppDelegate.h"
 #import "ExpressPhoneNum.h"
+#import "Lottie/Lottie.h"
+#import "FirstViewController.h"
 
 @interface AppDelegate ()
+
+@property (strong, nonnull) LOTAnimationView *animationView;
 
 @end
 
@@ -18,7 +22,29 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [self.window makeKeyAndVisible];
+    _animationView = [LOTAnimationView animationNamed:@"emoji_tongue"];
+    _animationView.frame = CGRectMake(0, 0, self.window.frame.size.width, self.window.frame.size.width);
+    _animationView.center = self.window.center;
+    _animationView.contentMode = UIViewContentModeScaleAspectFill;
+    [self.window addSubview:_animationView];
+    [self.window bringSubviewToFront:_animationView];
+    
+    [self performSelector:@selector(animation) withObject:nil afterDelay:1.0f];
+    _animationView.loopAnimation = NO;
+    
     return YES;
+}
+
+- (void) animation {
+    [_animationView playWithCompletion:^(BOOL animationFinished) {
+        if (animationFinished) {
+            NSLog(@"Remove");
+            [_animationView removeFromSuperview];
+        }
+    }];
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

@@ -317,6 +317,9 @@
     cell.textLabel.text = expressTmp.expressName;
     cell.detailTextLabel.text = expressTmp.expressNum;
     cell.imageView.image = [UIImage imageNamed:@"bule"];
+    
+    //cell.selectionStyle = UITableViewCellSelectionStyleNone;//不让选择的时候显示底色
+    
     return cell;
 }
 

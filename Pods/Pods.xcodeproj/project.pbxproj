@@ -1,0 +1,1148 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		002593C742744900E95B33AC534315FF /* LOTShapeTransform.h in Headers */ = {isa = PBXBuildFile; fileRef = 000DC6832E073A5FE965A1B86F237946 /* LOTShapeTransform.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		01F7DBE5D8FE050BFE3791E44D663C57 /* UIBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 514352E27EC4A420A31F6B2B459F69C0 /* UIBezierPath.m */; };
+		0214246CCB1FF7182F7222B9CCDF8FCB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0339164673A5C75C5E4018F798CE5EEE /* Foundation.framework */; };
+		0288900FDEC522B575ECA5E674DCDD59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0339164673A5C75C5E4018F798CE5EEE /* Foundation.framework */; };
+		05C2CA3C792A8A630CAFE5139112E691 /* lottie-ios-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF53CC7FFB4ED8A3C9AFF3BAF7D8FE8 /* lottie-ios-dummy.m */; };
+		09856DD0F24D7267FB4A6C0EF2A479EC /* LOTShapePath.h in Headers */ = {isa = PBXBuildFile; fileRef = 230C3982522C8AC6E11A01E2A09CA516 /* LOTShapePath.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0A33EC11B92D26DFDA632061F7140290 /* LOTAnimatableBoundsValue.m in Sources */ = {isa = PBXBuildFile; fileRef = B27F140420B4A5A03C93EE1A18BAFD4E /* LOTAnimatableBoundsValue.m */; };
+		0CDE6236860CA3BC2BCEF09369E073ED /* LOTShapeFill.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FBA1C62CC65490D409B15D57B2CB8E /* LOTShapeFill.m */; };
+		1341A7AC2439CB63D459D32EF985A414 /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E71EAD02A0A78CAC6EFEFC167DADCD6 /* UIImage+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D373E365F5D47BB63555C44A4D074C4 /* CADisplayLink.m in Sources */ = {isa = PBXBuildFile; fileRef = FB83C3C6CF75608EBC5CCE0E80E87F82 /* CADisplayLink.m */; };
+		1D3BDAB7F8070B81A2ED9DE43288A514 /* LOTMaskLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEFBC070029A37E03D56A69FB2CF4DA /* LOTMaskLayer.m */; };
+		20B626CF6DA0545314C00F56071349EE /* LOTLayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = C460EF9BF8B5BE6243F0277967F5582A /* LOTLayerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		234476374BDDFD492DEF4A1A9A8086CB /* LOTLayerGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E5751DCAF71B321876F62BAF6AC9B6 /* LOTLayerGroup.m */; };
+		24897352BCC1A8F81320A122717922EA /* LOTAnimatableShapeValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F4821BCCADFAA6887C91206D2DD049 /* LOTAnimatableShapeValue.m */; };
+		2579663181BFA8F7DA4B5D7CF8537FC0 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D16C39035D003C4573B7A066A5D795D /* UIActivityIndicatorView+AFNetworking.m */; };
+		2615B49F3730F81783173E7D711800D1 /* LOTShapeStroke.m in Sources */ = {isa = PBXBuildFile; fileRef = B5297B423F4FE16C1BD00B2E012B9D56 /* LOTShapeStroke.m */; };
+		2A7BBE3C04207BE015C96195E1B6597F /* LOTMask.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CCD76B71E1A1FC70E257000E3DA2C5F /* LOTMask.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2BD7CB42524971F77773BCC6CE077BE0 /* LOTShapeLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A58C6991BC8DF378A48344CF31E5DCE7 /* LOTShapeLayerView.m */; };
+		2D1F25C872ABD7A58AA26D2274EC0FF0 /* LOTAnimatableShapeValue.h in Headers */ = {isa = PBXBuildFile; fileRef = DCA40F4A4053496B572F4D6E5FAECFD6 /* LOTAnimatableShapeValue.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2EBAA518CB8B2DAF89A63637091D4615 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 63B757537C5B34DAAD28E03FD8DD5E7E /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F1C69E897BF079B3EA65846A12105EF /* CALayer+Compat.h in Headers */ = {isa = PBXBuildFile; fileRef = A524D3E52AAA7D9FCDCAE17DD8AA233A /* CALayer+Compat.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		31A4BE5610057C697788B10A46DE6A20 /* LOTRectShapeLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DEC3DD69604A3496DBCCEE75B52F726 /* LOTRectShapeLayer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		31ED9BD97AF9E62874AF3CDF2F8090CF /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1672BF437FCA9D348F5D0939A843B626 /* AFNetworkActivityIndicatorManager.m */; };
+		33A6EBB09EB10871AE82CA104EB70019 /* LOTAnimatableScaleValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E9285D4F523F46D50B9DD3A810DEDFD /* LOTAnimatableScaleValue.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3C7B52F78E29563614C3C2A884638E02 /* LOTPlatformCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = 261E223DCCDFA6982676242891A434D8 /* LOTPlatformCompat.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3D87C3602C73825D4C41BAFA1B251CF1 /* LOTShapeRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 511A27EC411CF790719713C281EBEDEF /* LOTShapeRectangle.m */; };
+		3ECF680963730A4EBB249D388573201A /* LOTShapeTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A46E950B92F39052255A8CB862FA63C /* LOTShapeTransform.m */; };
+		430620689F81DAEC262045AAD7B043D5 /* LOTAnimatableLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F5A5C2E021A26040A90581AF0677BD /* LOTAnimatableLayer.m */; };
+		45327BFB2B4BFC370E7048DF9598A7A2 /* LOTAnimatableNumberValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 98D134416DA9EFD6D2A239720FBA7D61 /* LOTAnimatableNumberValue.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		45B53619F91C2401448C306BB0587A37 /* NSValue+Compat.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA25646019B60FD5824D95FBBB63644 /* NSValue+Compat.m */; };
+		46062599E73E0F851A0C031BEDBA47D5 /* LOTEllipseShapeLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 61212597E0B58AC1CDBDCAC748130957 /* LOTEllipseShapeLayer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		46401F3C7FF0B0CFE2E9B14914780835 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 46E121C341E6052772869696FAB17D96 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B849D0E2FF85DFA0F5F2DE2B47C4E71 /* LOTLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D681EE0BF4F7F274D3067CF2E3E76595 /* LOTLayerView.m */; };
+		4D6C6DD44396CAA6A3616A093B71F68D /* LOTEllipseShapeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 25299270F2D02C41A8E8AE9E5DECE176 /* LOTEllipseShapeLayer.m */; };
+		50968C20B18F11C472C9C2674EDC9DB9 /* LOTAnimatableValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F9034AB039ABE4958E5428E70DBD2D3 /* LOTAnimatableValue.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		50AD87213515E85855AF46FF5B0FFAAC /* LOTAnimatablePointValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1D08C214BFEC3D32F56D14F3AB98FB /* LOTAnimatablePointValue.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		51EADCD280386B792A11C9C60DDA539D /* LOTAnimatableScaleValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 96472AA9F9155C727A81BF70B2DAA28B /* LOTAnimatableScaleValue.m */; };
+		52F637DC726228F796BFA6F97CADFB46 /* LOTAnimationView_Compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CAD2FA629D99D4BF524D3F684AF1515 /* LOTAnimationView_Compat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		551F0C58C432B328A151479B72683C57 /* CGGeometry+LOTAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 32688AE63B369263F681CDE1795716E1 /* CGGeometry+LOTAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5568AD62E7DC726B11CC4D4A02185D07 /* LOTRectShapeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 750D988E2ED8A2F967A793C733E6949D /* LOTRectShapeLayer.m */; };
+		5719F06B809080CDEF7E6BC75DEA1A3C /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 706AA36D23CF4317CE78581A6C539EAE /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5945033488F9995134DBB7014DE2412F /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DDACDB3BEA9A9646A8CA2A2E103B0C /* AFURLRequestSerialization.m */; };
+		5C0696B2AD1DC23F6473F5A19FAB6296 /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 11151F5647BD2E7736AD244F147F545F /* AFImageDownloader.m */; };
+		60B01E313D74FA7BB924C37687EE66A0 /* CGGeometry+LOTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B620227788F8E8209E3785490E6F59F0 /* CGGeometry+LOTAdditions.m */; };
+		63634C47AAB69889070D6EFB24D771B3 /* CADisplayLink.h in Headers */ = {isa = PBXBuildFile; fileRef = F5502C96C0FB093EFCEBD3DCFAB1AE93 /* CADisplayLink.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		642C4A7768A9BB122239DCCBAC516BF2 /* LOTShapeLayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1AAF9D3F49EB57722A018E0C90BF83 /* LOTShapeLayerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		657814D5FA3820C3D9391337AB3A028E /* LOTAssetGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = B13DD76A8822A63BF255FE4031AD5CA0 /* LOTAssetGroup.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		660AE0C322CA3AB1E318889C4630146E /* LOTAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83FB58EC1B6F43B5C7DC8010AAF06482 /* LOTAnimationView.m */; };
+		663F85F3EE22A762F6263FCF4BDDC956 /* LOTShapeRectangle.h in Headers */ = {isa = PBXBuildFile; fileRef = DB6044C155FEC746CD244648A0FFE792 /* LOTShapeRectangle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		66635EAAE52FF5571DBCDC626FB8CA86 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = E408F4140D5B7123E3939876CEFC9494 /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66E1040543AF7BA3DC3731FE17C85F5B /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = D54004975E5102FE618FF14B29187A6A /* AFSecurityPolicy.m */; };
+		67AB6DC5C22A9F913ED27C42E6128B0A /* LOTAsset.h in Headers */ = {isa = PBXBuildFile; fileRef = 47E03610A1E38291124BCFCB7E5FCC76 /* LOTAsset.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		682B0E603612B6ADBCCF30580F9A4B09 /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 449938C14EB718509012618602D9317D /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A4950107736811CE729776E4097521E /* LOTMaskLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 243E66A29E369C5BA80FFB73A1AA82B5 /* LOTMaskLayer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6B71CE5BA32574F407349C1DA20605B4 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AE7ADCC79E7506FF2FB355767B78FA97 /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C4F47D27D9E3B5953422E22BFDC742D /* CAAnimationGroup+LOTAnimatableGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 36D17E42482CED8E442BFE6426B2C739 /* CAAnimationGroup+LOTAnimatableGroup.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		707E818332E5033501DF2D7826C639DF /* AFImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = D84D67FFA62C040FDF2184C25A546556 /* AFImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71C179D42455148C1450DA7397B2FA3C /* UIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 482CDE32AA9DBFB2505BCF0B71B8E912 /* UIColor.m */; };
+		72E66D2143697D3FB44E89E0DA465702 /* LOTLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EE1FD0FA5750AEDA5CCE1BC73D7308 /* LOTLayer.m */; };
+		734B89B24EB978368EAA4047A5A013A2 /* LOTAnimatableNumberValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F49D760BB80C86A18088F530425EF772 /* LOTAnimatableNumberValue.m */; };
+		73811DA312BCB537D44D62EC6AD15766 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B297F84CBB19900D2053329D7BB34D04 /* AFHTTPSessionManager.m */; };
+		775CE7A8107457BDE59F113D40020839 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E91D22BDD06AB9E14CA2793EE7F9C001 /* AFAutoPurgingImageCache.m */; };
+		7BF6AA550E7301B15A0B3C7B676383D8 /* LOTAnimationTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5B3470877012EE1F0375584DAE2105 /* LOTAnimationTransitionController.m */; };
+		7DFABD0CAF59A9316E4F99FDB4B30399 /* LOTMask.m in Sources */ = {isa = PBXBuildFile; fileRef = 6067F32446CEA6D196C3220C28D98AF5 /* LOTMask.m */; };
+		7F464F6D438AF6C0BC8FAC2E92761100 /* UIColor+Expanded.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B48537D1141E0854DBC0A7391B2844A /* UIColor+Expanded.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8092E325145CE0965F1146E6104D2513 /* LOTModels.h in Headers */ = {isa = PBXBuildFile; fileRef = 66E6BB8ED9BC20235E5CF5C0242A88F8 /* LOTModels.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		859BF211FC8CA02D767D041B1E7C8F19 /* LOTAnimationView_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 09DB86EFC312DB785CD92CFEDBBC98DC /* LOTAnimationView_Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		85D30678FF4F0AB306399A368EAA46B2 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C6004518D7313A2F3DD3146A6253A0 /* AFURLResponseSerialization.m */; };
+		87C02C17216030C3D34B2FEBB7FFC78F /* Pods-Express-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E5D6C36BEBBB8FC16BED67F69D9CC8 /* Pods-Express-dummy.m */; };
+		8958F2453EEBAF71BFEBD78FB48986EC /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 37F2C626052B0D4CA4C34595CEFA5682 /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B0E3E972FCAEDBFC5A8A55999390053 /* LOTShapeGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E553E263BA3FAC4F0F709BAB65E46B /* LOTShapeGroup.m */; };
+		8BD097470413F1A24F5F5108CA93E97F /* NSValue+Compat.h in Headers */ = {isa = PBXBuildFile; fileRef = B567D983DCFDE9CE3B7DB72FC58CCB99 /* NSValue+Compat.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8D3A193418736314EF329425D2833C9A /* LOTShapeTrimPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D6B90137C9A9FD3E1ABAF371B7D1EF /* LOTShapeTrimPath.m */; };
+		903158692A045396106CA22C0DD13BA6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A78E5A576CDDF089002FA7301D2AD8 /* SystemConfiguration.framework */; };
+		90ABE0C387D3EEF6AAA8CE2AD0A15E46 /* LOTAnimationCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BBCF57432C4A12D61473E0A5204E4C /* LOTAnimationCache.m */; };
+		976FD491552132D75B31956C77C0AE70 /* LOTAnimatableLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = F6D6899E963293E5FC1005EB11A613B2 /* LOTAnimatableLayer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		97A86FAAD4B1AD9B3292FF6AF1D8F82B /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E7C59527BB79330F25DF2A3CA4073C /* AFNetworking-dummy.m */; };
+		9962E8898FE8451572CE7EC331CB2DE1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51EEF5F6B8DF9CB28A3362570D60C5A5 /* UIKit.framework */; };
+		9C163DF0F1560E42A8D9DD26AACC3796 /* LOTAnimationCache.h in Headers */ = {isa = PBXBuildFile; fileRef = FF34236184A8882FA272B82A83684139 /* LOTAnimationCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9F5BB6B4995BA4A3B2C6AEBA6C31A6DB /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6C6992B0F509541F1F0E9B344A4159 /* AFURLSessionManager.m */; };
+		A1CFBA8D0D80F4F4B456BC237AD035E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0339164673A5C75C5E4018F798CE5EEE /* Foundation.framework */; };
+		A277AD9070E44BED5A7DE0B1D64D6F15 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE68326112B6628DA72E6E1896C871E /* UIImageView+AFNetworking.m */; };
+		A57374EB37963A919199597C9845A301 /* LOTGroupLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53963AF567563860F82A2BE735C642A3 /* LOTGroupLayerView.m */; };
+		A7CF6D18BDE57B32F55C6FF3F25C1EAB /* LOTCompositionLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = AD00BC7856B509CB74D7440913FC2BB0 /* LOTCompositionLayer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A7F7FDCD36E2DD8D8E346DB19452CC03 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 592A02365E01A5957AD6B77181E67D46 /* UIWebView+AFNetworking.m */; };
+		AAA9DF650BA812D81A671102176A9A9E /* Lottie.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C8A4B1E59E52C18549E3AC95F0BB0B5 /* Lottie.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC3634A57815C9917CD5F1D4CE19B131 /* LOTHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 098201B5357242ED055F4DE97262332E /* LOTHelpers.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		ADCB6CE107D7F2A60903DABC69FE8E99 /* LOTAnimationTransitionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DB05A605170700139BE24A3EEF3159 /* LOTAnimationTransitionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B40756412613B53C80EE77C4C223990F /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E973E9971A5385B9E7E3D9596E51DC7 /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B84CD33084C9867E67BD56E47B7BFC04 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC2BA0D499F6E7D18D0C31BCAEF0299 /* UIRefreshControl+AFNetworking.m */; };
+		BB46C36421EF0E97AA87C5362D483AF0 /* LOTCompositionLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB41954CAE95B35AFAEC4D551CD27DB /* LOTCompositionLayer.m */; };
+		BD11223A52C16BF81381D87B02562778 /* LOTStrokeShapeLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = ACA0BB4C064E1E7632574541EB5F5D74 /* LOTStrokeShapeLayer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BDADA79B9751AD3E9DF1B73349ADD897 /* LOTStrokeShapeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A90D00BDAD7F2CC7249ABF3636B567 /* LOTStrokeShapeLayer.m */; };
+		BE35EF8CFBC6C4FFB881CCD2A3531570 /* LOTShapeFill.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FC79DB8024244A6F908CBAC933909D2 /* LOTShapeFill.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C0803F821FEAC5A2E67472121F2B2CE7 /* LOTLayerGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = CD13B57148DC35062CA7A760B7929211 /* LOTLayerGroup.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C1C0D7C93BF3DE14A26757273598D0FA /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AB3918FEA9CA3E0FEF557C5C0EF77A8 /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7D2FAF65EC6593397553F264A240893 /* LOTLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D1974A8AABCD5AA606E09F62C1DB0E6 /* LOTLayer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C99AC730E6DF2B201C3F9FBA73F4009C /* CALayer+Compat.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4D6D72E831ADDA623E81C5F595D747 /* CALayer+Compat.m */; };
+		CA1049FDFCDAA7C289D49E823A79825C /* LOTAssetGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFA5A35EB4A7EBC7A3F8C2A104915EB /* LOTAssetGroup.m */; };
+		CBBEF2747BCA790DAF09B99793AA8AE9 /* LOTAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6617827D36CC284852C8D8D6B08E5C55 /* LOTAnimationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBCCEAD402645565401CA93924736979 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041F55AE36E26F3BDCC4B40490B54E30 /* CoreGraphics.framework */; };
+		CCE3DBB049BD7D3C1E1A0C268183DB07 /* LOTShapeCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2A75B0157085EAE3AB6AE47E0321B4 /* LOTShapeCircle.m */; };
+		CF2695E2C7ABDE20B7371BDCDC659DD1 /* LOTComposition.h in Headers */ = {isa = PBXBuildFile; fileRef = 313E2886579E3B6C35E578A9A2DE7F65 /* LOTComposition.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D10CC46035F7A0C868C0955664A34609 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3034B609D65B685A09AB41F05AF6CF /* UIButton+AFNetworking.m */; };
+		D3491C73EE089FDF0762781F0C697A6F /* LOTComposition.m in Sources */ = {isa = PBXBuildFile; fileRef = DECE92B7F143A5320BF5D4EF5829D3C5 /* LOTComposition.m */; };
+		D4AA4704CA7863CC86E22AAF88635836 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = EF21A338EBC2C8925116A30B51A5DAC6 /* UIProgressView+AFNetworking.m */; };
+		D5913A54FD7091145BAE23217F3B60C7 /* LOTShapeStroke.h in Headers */ = {isa = PBXBuildFile; fileRef = D30B2155A771A21BA0910700B93C8C05 /* LOTShapeStroke.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D59414C77FF7CE11EAE8FD41055EE317 /* CAAnimationGroup+LOTAnimatableGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F919B232C86FF77B1F5B8D09F18DEE /* CAAnimationGroup+LOTAnimatableGroup.m */; };
+		D59FC98A74E440C4725B6FDC28F5951E /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = B477B6C4AC168316A5891DB7803D237A /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5CB999FB5FC80FC126A38AB4DF12227 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7DBCF0473A61399BE743F4BB541A52 /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA183DAAD03E1D9F7011917F70827958 /* LOTShapeTrimPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C37C74DF58097419E6A0059508D8069 /* LOTShapeTrimPath.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DB773B8E14EAD7A3EEB6713AA7298CDC /* UIColor+Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 639D226E0F17F73610F1899C762C3ACC /* UIColor+Expanded.m */; };
+		DB9EAEAD160B92AF2E7EB5265279EA9F /* UIBezierPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 13987A8629EA1A6D527068FD0F4AEF85 /* UIBezierPath.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DC8688FE0BFA25E6B318B052E8B60CF9 /* LOTAnimatableColorValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DCB604BE39BD2C88B789087CC4A30CF /* LOTAnimatableColorValue.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DD37E6C71CCCF66CF17280EDEAFE371C /* UIColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 760577299E4030B727B055424B55234E /* UIColor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DE31BBF6A7963C5871A19655EF5532BE /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 458AB045914143C8F6915BF6C8E7203E /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE825B8F32AB823F4BE5492CAC6FCB4B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66EB5B938802F986D305D37865A72F7F /* Security.framework */; };
+		E0EF330DB2D3521ED26E67B2E8687A2E /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EA029698FB183C660074905D474F4498 /* AFNetworkReachabilityManager.m */; };
+		E2F8C1D2BA8A011A399FAD90F14D109A /* LOTAnimatableBoundsValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 546E849FF75C52C8E6D2B415682E4893 /* LOTAnimatableBoundsValue.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E65B22E7E874CC7112CEDB5E75898789 /* LOTAnimatablePointValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6672A9C79C0BBAA761D3E3CE5FCE17A4 /* LOTAnimatablePointValue.m */; };
+		E7B0270BEDCBE116DDD853F76E27B0BA /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C8AA5F7FA038007EF161613CFEC1FF85 /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9971ED2186E4E1CCA58726737E5A37F /* LOTAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = A18B0980ADA55C6C62C5D6C11095F534 /* LOTAsset.m */; };
+		EB2AF103A1E01184B1CF8ED6E63FFF1C /* LOTShapeCircle.h in Headers */ = {isa = PBXBuildFile; fileRef = EE35E2D72592BB6CFDF08F4B573C60CE /* LOTShapeCircle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F099E5987DD80E8D78E909AF81D3C587 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 191101B2DB24C83665DF71A0232DB355 /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F10DE30C84DD4AAD45F37C409FC9C519 /* LOTGroupLayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = D12D60D9CD695AC75936D44054D7A1BB /* LOTGroupLayerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F1F93EE1AA5E870F2CE81325CE9EB643 /* AFAutoPurgingImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 93A7A883E4935D665239771CC5F56027 /* AFAutoPurgingImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2C77A5F01F84557839DBFA3BB197535 /* LOTShapeGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B4B8581F6D7C9C50C164E3E4261140A /* LOTShapeGroup.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F5CC06F3E0C232483A72DCCFAF393BE0 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 30131750E1A74752A2BD0ACCD33194FA /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8DCA6C3C05A59B2C95A1B5F1CBD8C99 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF435BBF67523FB6D2633A16438FDB4B /* MobileCoreServices.framework */; };
+		FD01F59B3EEFD45A3CD9C8F8365F1C28 /* LOTShapePath.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B407E2B125F0A8F67CA8CA368D2AAE0 /* LOTShapePath.m */; };
+		FFF1A000C4D1B5D37A19EF3384B21CE9 /* LOTAnimatableColorValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B218122717679CA1C413740CF549C95 /* LOTAnimatableColorValue.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FFBD47565F8F1981DAC1FED24D0DB48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E033EDB5EC0819481B0546434FA577B;
+			remoteInfo = AFNetworking;
+		};
+		7A720A5E32295AAC40102BDAC0333D2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 017653E2E48B0CC14E4BB5342FB2EE43;
+			remoteInfo = "lottie-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		000DC6832E073A5FE965A1B86F237946 /* LOTShapeTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTShapeTransform.h; path = "lottie-ios/Classes/Models/LOTShapeTransform.h"; sourceTree = "<group>"; };
+		01F4821BCCADFAA6887C91206D2DD049 /* LOTAnimatableShapeValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTAnimatableShapeValue.m; path = "lottie-ios/Classes/AnimatableProperties/LOTAnimatableShapeValue.m"; sourceTree = "<group>"; };
+		0339164673A5C75C5E4018F798CE5EEE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		041F55AE36E26F3BDCC4B40490B54E30 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		08E5D6C36BEBBB8FC16BED67F69D9CC8 /* Pods-Express-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Express-dummy.m"; sourceTree = "<group>"; };
+		098201B5357242ED055F4DE97262332E /* LOTHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTHelpers.h; path = "lottie-ios/Classes/Extensions/LOTHelpers.h"; sourceTree = "<group>"; };
+		09DB86EFC312DB785CD92CFEDBBC98DC /* LOTAnimationView_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTAnimationView_Internal.h; path = "lottie-ios/Classes/Private/LOTAnimationView_Internal.h"; sourceTree = "<group>"; };
+		0A3034B609D65B685A09AB41F05AF6CF /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		11151F5647BD2E7736AD244F147F545F /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
+		13987A8629EA1A6D527068FD0F4AEF85 /* UIBezierPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIBezierPath.h; path = "lottie-ios/Classes/MacCompatability/UIBezierPath.h"; sourceTree = "<group>"; };
+		1672BF437FCA9D348F5D0939A843B626 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
+		191101B2DB24C83665DF71A0232DB355 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		20DB05A605170700139BE24A3EEF3159 /* LOTAnimationTransitionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTAnimationTransitionController.h; path = "lottie-ios/Classes/PublicHeaders/LOTAnimationTransitionController.h"; sourceTree = "<group>"; };
+		230C3982522C8AC6E11A01E2A09CA516 /* LOTShapePath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTShapePath.h; path = "lottie-ios/Classes/Models/LOTShapePath.h"; sourceTree = "<group>"; };
+		243E66A29E369C5BA80FFB73A1AA82B5 /* LOTMaskLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTMaskLayer.h; path = "lottie-ios/Classes/AnimatableLayers/LOTMaskLayer.h"; sourceTree = "<group>"; };
+		25299270F2D02C41A8E8AE9E5DECE176 /* LOTEllipseShapeLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTEllipseShapeLayer.m; path = "lottie-ios/Classes/AnimatableLayers/LOTEllipseShapeLayer.m"; sourceTree = "<group>"; };
+		261E223DCCDFA6982676242891A434D8 /* LOTPlatformCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTPlatformCompat.h; path = "lottie-ios/Classes/MacCompatability/LOTPlatformCompat.h"; sourceTree = "<group>"; };
+		2A46E950B92F39052255A8CB862FA63C /* LOTShapeTransform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTShapeTransform.m; path = "lottie-ios/Classes/Models/LOTShapeTransform.m"; sourceTree = "<group>"; };
+		2CCD76B71E1A1FC70E257000E3DA2C5F /* LOTMask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTMask.h; path = "lottie-ios/Classes/Models/LOTMask.h"; sourceTree = "<group>"; };
+		2DEC3DD69604A3496DBCCEE75B52F726 /* LOTRectShapeLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTRectShapeLayer.h; path = "lottie-ios/Classes/AnimatableLayers/LOTRectShapeLayer.h"; sourceTree = "<group>"; };
+		30131750E1A74752A2BD0ACCD33194FA /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		313E2886579E3B6C35E578A9A2DE7F65 /* LOTComposition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTComposition.h; path = "lottie-ios/Classes/Models/LOTComposition.h"; sourceTree = "<group>"; };
+		31A5A3A6A46EA72A7CD85A9B9FEAD67B /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAFNetworking.a; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		32688AE63B369263F681CDE1795716E1 /* CGGeometry+LOTAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CGGeometry+LOTAdditions.h"; path = "lottie-ios/Classes/Extensions/CGGeometry+LOTAdditions.h"; sourceTree = "<group>"; };
+		32C6AFA8236EA0911C99B34DD1996CA2 /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
+		36D17E42482CED8E442BFE6426B2C739 /* CAAnimationGroup+LOTAnimatableGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CAAnimationGroup+LOTAnimatableGroup.h"; path = "lottie-ios/Classes/Extensions/CAAnimationGroup+LOTAnimatableGroup.h"; sourceTree = "<group>"; };
+		37F2C626052B0D4CA4C34595CEFA5682 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		3E5B3470877012EE1F0375584DAE2105 /* LOTAnimationTransitionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTAnimationTransitionController.m; path = "lottie-ios/Classes/Private/LOTAnimationTransitionController.m"; sourceTree = "<group>"; };
+		3EC2BA0D499F6E7D18D0C31BCAEF0299 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		3FC79DB8024244A6F908CBAC933909D2 /* LOTShapeFill.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTShapeFill.h; path = "lottie-ios/Classes/Models/LOTShapeFill.h"; sourceTree = "<group>"; };
+		449938C14EB718509012618602D9317D /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		458AB045914143C8F6915BF6C8E7203E /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		46E121C341E6052772869696FAB17D96 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		47E03610A1E38291124BCFCB7E5FCC76 /* LOTAsset.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTAsset.h; path = "lottie-ios/Classes/Models/LOTAsset.h"; sourceTree = "<group>"; };
+		482CDE32AA9DBFB2505BCF0B71B8E912 /* UIColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIColor.m; path = "lottie-ios/Classes/MacCompatability/UIColor.m"; sourceTree = "<group>"; };
+		4C6C6992B0F509541F1F0E9B344A4159 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		4C8A4B1E59E52C18549E3AC95F0BB0B5 /* Lottie.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Lottie.h; path = "lottie-ios/Classes/PublicHeaders/Lottie.h"; sourceTree = "<group>"; };
+		4D1974A8AABCD5AA606E09F62C1DB0E6 /* LOTLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTLayer.h; path = "lottie-ios/Classes/Models/LOTLayer.h"; sourceTree = "<group>"; };
+		4E71EAD02A0A78CAC6EFEFC167DADCD6 /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AFNetworking.h"; path = "UIKit+AFNetworking/UIImage+AFNetworking.h"; sourceTree = "<group>"; };
+		4F56E70D8C582C8191A80D8F702884F7 /* Pods-Express-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Express-acknowledgements.plist"; sourceTree = "<group>"; };
+		511A27EC411CF790719713C281EBEDEF /* LOTShapeRectangle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTShapeRectangle.m; path = "lottie-ios/Classes/Models/LOTShapeRectangle.m"; sourceTree = "<group>"; };
+		514352E27EC4A420A31F6B2B459F69C0 /* UIBezierPath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIBezierPath.m; path = "lottie-ios/Classes/MacCompatability/UIBezierPath.m"; sourceTree = "<group>"; };
+		51EEF5F6B8DF9CB28A3362570D60C5A5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		53963AF567563860F82A2BE735C642A3 /* LOTGroupLayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTGroupLayerView.m; path = "lottie-ios/Classes/AnimatableLayers/LOTGroupLayerView.m"; sourceTree = "<group>"; };
+		546E849FF75C52C8E6D2B415682E4893 /* LOTAnimatableBoundsValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTAnimatableBoundsValue.h; path = "lottie-ios/Classes/AnimatableProperties/LOTAnimatableBoundsValue.h"; sourceTree = "<group>"; };
+		55D6B90137C9A9FD3E1ABAF371B7D1EF /* LOTShapeTrimPath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTShapeTrimPath.m; path = "lottie-ios/Classes/Models/LOTShapeTrimPath.m"; sourceTree = "<group>"; };
+		592A02365E01A5957AD6B77181E67D46 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		5A4D6D72E831ADDA623E81C5F595D747 /* CALayer+Compat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+Compat.m"; path = "lottie-ios/Classes/MacCompatability/CALayer+Compat.m"; sourceTree = "<group>"; };
+		5B407E2B125F0A8F67CA8CA368D2AAE0 /* LOTShapePath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTShapePath.m; path = "lottie-ios/Classes/Models/LOTShapePath.m"; sourceTree = "<group>"; };
+		5CAD2FA629D99D4BF524D3F684AF1515 /* LOTAnimationView_Compat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTAnimationView_Compat.h; path = "lottie-ios/Classes/PublicHeaders/LOTAnimationView_Compat.h"; sourceTree = "<group>"; };
+		6067F32446CEA6D196C3220C28D98AF5 /* LOTMask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTMask.m; path = "lottie-ios/Classes/Models/LOTMask.m"; sourceTree = "<group>"; };
+		60E553E263BA3FAC4F0F709BAB65E46B /* LOTShapeGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTShapeGroup.m; path = "lottie-ios/Classes/Models/LOTShapeGroup.m"; sourceTree = "<group>"; };
+		61212597E0B58AC1CDBDCAC748130957 /* LOTEllipseShapeLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTEllipseShapeLayer.h; path = "lottie-ios/Classes/AnimatableLayers/LOTEllipseShapeLayer.h"; sourceTree = "<group>"; };
+		639D226E0F17F73610F1899C762C3ACC /* UIColor+Expanded.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Expanded.m"; path = "lottie-ios/Classes/Extensions/UIColor+Expanded.m"; sourceTree = "<group>"; };
+		63B757537C5B34DAAD28E03FD8DD5E7E /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		65F5A5C2E021A26040A90581AF0677BD /* LOTAnimatableLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTAnimatableLayer.m; path = "lottie-ios/Classes/AnimatableLayers/LOTAnimatableLayer.m"; sourceTree = "<group>"; };
+		6617827D36CC284852C8D8D6B08E5C55 /* LOTAnimationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTAnimationView.h; path = "lottie-ios/Classes/PublicHeaders/LOTAnimationView.h"; sourceTree = "<group>"; };
+		6672A9C79C0BBAA761D3E3CE5FCE17A4 /* LOTAnimatablePointValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTAnimatablePointValue.m; path = "lottie-ios/Classes/AnimatableProperties/LOTAnimatablePointValue.m"; sourceTree = "<group>"; };
+		66E6BB8ED9BC20235E5CF5C0242A88F8 /* LOTModels.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTModels.h; path = "lottie-ios/Classes/Models/LOTModels.h"; sourceTree = "<group>"; };
+		66EB5B938802F986D305D37865A72F7F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		66FBA1C62CC65490D409B15D57B2CB8E /* LOTShapeFill.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTShapeFill.m; path = "lottie-ios/Classes/Models/LOTShapeFill.m"; sourceTree = "<group>"; };
+		6C25F79967FA16D484DC583D0160A6B1 /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		6CFA5A35EB4A7EBC7A3F8C2A104915EB /* LOTAssetGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTAssetGroup.m; path = "lottie-ios/Classes/Models/LOTAssetGroup.m"; sourceTree = "<group>"; };
+		6F764A73E283D5D331674A83613CABA3 /* Pods-Express.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Express.release.xcconfig"; sourceTree = "<group>"; };
+		6F9034AB039ABE4958E5428E70DBD2D3 /* LOTAnimatableValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTAnimatableValue.h; path = "lottie-ios/Classes/AnimatableProperties/LOTAnimatableValue.h"; sourceTree = "<group>"; };
+		706AA36D23CF4317CE78581A6C539EAE /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		7274864BC393012C36817CCB6D1061C8 /* Pods-Express-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Express-acknowledgements.markdown"; sourceTree = "<group>"; };
+		750D988E2ED8A2F967A793C733E6949D /* LOTRectShapeLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTRectShapeLayer.m; path = "lottie-ios/Classes/AnimatableLayers/LOTRectShapeLayer.m"; sourceTree = "<group>"; };
+		760577299E4030B727B055424B55234E /* UIColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIColor.h; path = "lottie-ios/Classes/MacCompatability/UIColor.h"; sourceTree = "<group>"; };
+		78B53A355617A0240B7DE3F975CB0FF0 /* Pods-Express.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Express.debug.xcconfig"; sourceTree = "<group>"; };
+		7B48537D1141E0854DBC0A7391B2844A /* UIColor+Expanded.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Expanded.h"; path = "lottie-ios/Classes/Extensions/UIColor+Expanded.h"; sourceTree = "<group>"; };
+		7C37C74DF58097419E6A0059508D8069 /* LOTShapeTrimPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTShapeTrimPath.h; path = "lottie-ios/Classes/Models/LOTShapeTrimPath.h"; sourceTree = "<group>"; };
+		7DCB604BE39BD2C88B789087CC4A30CF /* LOTAnimatableColorValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTAnimatableColorValue.h; path = "lottie-ios/Classes/AnimatableProperties/LOTAnimatableColorValue.h"; sourceTree = "<group>"; };
+		7E9285D4F523F46D50B9DD3A810DEDFD /* LOTAnimatableScaleValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTAnimatableScaleValue.h; path = "lottie-ios/Classes/AnimatableProperties/LOTAnimatableScaleValue.h"; sourceTree = "<group>"; };
+		83FB58EC1B6F43B5C7DC8010AAF06482 /* LOTAnimationView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTAnimationView.m; path = "lottie-ios/Classes/Private/LOTAnimationView.m"; sourceTree = "<group>"; };
+		8AB3918FEA9CA3E0FEF557C5C0EF77A8 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		8D16C39035D003C4573B7A066A5D795D /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		8E1D08C214BFEC3D32F56D14F3AB98FB /* LOTAnimatablePointValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTAnimatablePointValue.h; path = "lottie-ios/Classes/AnimatableProperties/LOTAnimatablePointValue.h"; sourceTree = "<group>"; };
+		8FEFBC070029A37E03D56A69FB2CF4DA /* LOTMaskLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTMaskLayer.m; path = "lottie-ios/Classes/AnimatableLayers/LOTMaskLayer.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A7A883E4935D665239771CC5F56027 /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
+		96472AA9F9155C727A81BF70B2DAA28B /* LOTAnimatableScaleValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTAnimatableScaleValue.m; path = "lottie-ios/Classes/AnimatableProperties/LOTAnimatableScaleValue.m"; sourceTree = "<group>"; };
+		98D134416DA9EFD6D2A239720FBA7D61 /* LOTAnimatableNumberValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTAnimatableNumberValue.h; path = "lottie-ios/Classes/AnimatableProperties/LOTAnimatableNumberValue.h"; sourceTree = "<group>"; };
+		9AC7E0D2406BF63B94936D4C7799DA3E /* Pods-Express-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Express-frameworks.sh"; sourceTree = "<group>"; };
+		9B218122717679CA1C413740CF549C95 /* LOTAnimatableColorValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTAnimatableColorValue.m; path = "lottie-ios/Classes/AnimatableProperties/LOTAnimatableColorValue.m"; sourceTree = "<group>"; };
+		9B4B8581F6D7C9C50C164E3E4261140A /* LOTShapeGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTShapeGroup.h; path = "lottie-ios/Classes/Models/LOTShapeGroup.h"; sourceTree = "<group>"; };
+		9CF53CC7FFB4ED8A3C9AFF3BAF7D8FE8 /* lottie-ios-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "lottie-ios-dummy.m"; sourceTree = "<group>"; };
+		9E973E9971A5385B9E7E3D9596E51DC7 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		A18B0980ADA55C6C62C5D6C11095F534 /* LOTAsset.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTAsset.m; path = "lottie-ios/Classes/Models/LOTAsset.m"; sourceTree = "<group>"; };
+		A4A78E5A576CDDF089002FA7301D2AD8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		A524D3E52AAA7D9FCDCAE17DD8AA233A /* CALayer+Compat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+Compat.h"; path = "lottie-ios/Classes/MacCompatability/CALayer+Compat.h"; sourceTree = "<group>"; };
+		A58C6991BC8DF378A48344CF31E5DCE7 /* LOTShapeLayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTShapeLayerView.m; path = "lottie-ios/Classes/AnimatableLayers/LOTShapeLayerView.m"; sourceTree = "<group>"; };
+		ACA0BB4C064E1E7632574541EB5F5D74 /* LOTStrokeShapeLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTStrokeShapeLayer.h; path = "lottie-ios/Classes/AnimatableLayers/LOTStrokeShapeLayer.h"; sourceTree = "<group>"; };
+		AD00BC7856B509CB74D7440913FC2BB0 /* LOTCompositionLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTCompositionLayer.h; path = "lottie-ios/Classes/AnimatableLayers/LOTCompositionLayer.h"; sourceTree = "<group>"; };
+		AE7ADCC79E7506FF2FB355767B78FA97 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		B0E5751DCAF71B321876F62BAF6AC9B6 /* LOTLayerGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTLayerGroup.m; path = "lottie-ios/Classes/Models/LOTLayerGroup.m"; sourceTree = "<group>"; };
+		B13DD76A8822A63BF255FE4031AD5CA0 /* LOTAssetGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTAssetGroup.h; path = "lottie-ios/Classes/Models/LOTAssetGroup.h"; sourceTree = "<group>"; };
+		B27F140420B4A5A03C93EE1A18BAFD4E /* LOTAnimatableBoundsValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTAnimatableBoundsValue.m; path = "lottie-ios/Classes/AnimatableProperties/LOTAnimatableBoundsValue.m"; sourceTree = "<group>"; };
+		B297F84CBB19900D2053329D7BB34D04 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		B2F919B232C86FF77B1F5B8D09F18DEE /* CAAnimationGroup+LOTAnimatableGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CAAnimationGroup+LOTAnimatableGroup.m"; path = "lottie-ios/Classes/Extensions/CAAnimationGroup+LOTAnimatableGroup.m"; sourceTree = "<group>"; };
+		B477B6C4AC168316A5891DB7803D237A /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		B5297B423F4FE16C1BD00B2E012B9D56 /* LOTShapeStroke.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTShapeStroke.m; path = "lottie-ios/Classes/Models/LOTShapeStroke.m"; sourceTree = "<group>"; };
+		B567D983DCFDE9CE3B7DB72FC58CCB99 /* NSValue+Compat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValue+Compat.h"; path = "lottie-ios/Classes/MacCompatability/NSValue+Compat.h"; sourceTree = "<group>"; };
+		B620227788F8E8209E3785490E6F59F0 /* CGGeometry+LOTAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CGGeometry+LOTAdditions.m"; path = "lottie-ios/Classes/Extensions/CGGeometry+LOTAdditions.m"; sourceTree = "<group>"; };
+		BC7DBCF0473A61399BE743F4BB541A52 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		BDE68326112B6628DA72E6E1896C871E /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		BFB41954CAE95B35AFAEC4D551CD27DB /* LOTCompositionLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTCompositionLayer.m; path = "lottie-ios/Classes/AnimatableLayers/LOTCompositionLayer.m"; sourceTree = "<group>"; };
+		C460EF9BF8B5BE6243F0277967F5582A /* LOTLayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTLayerView.h; path = "lottie-ios/Classes/AnimatableLayers/LOTLayerView.h"; sourceTree = "<group>"; };
+		C6C6004518D7313A2F3DD3146A6253A0 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		C8AA5F7FA038007EF161613CFEC1FF85 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
+		CBA25646019B60FD5824D95FBBB63644 /* NSValue+Compat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValue+Compat.m"; path = "lottie-ios/Classes/MacCompatability/NSValue+Compat.m"; sourceTree = "<group>"; };
+		CD13B57148DC35062CA7A760B7929211 /* LOTLayerGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTLayerGroup.h; path = "lottie-ios/Classes/Models/LOTLayerGroup.h"; sourceTree = "<group>"; };
+		D12D60D9CD695AC75936D44054D7A1BB /* LOTGroupLayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTGroupLayerView.h; path = "lottie-ios/Classes/AnimatableLayers/LOTGroupLayerView.h"; sourceTree = "<group>"; };
+		D2DDACDB3BEA9A9646A8CA2A2E103B0C /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		D30B2155A771A21BA0910700B93C8C05 /* LOTShapeStroke.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTShapeStroke.h; path = "lottie-ios/Classes/Models/LOTShapeStroke.h"; sourceTree = "<group>"; };
+		D54004975E5102FE618FF14B29187A6A /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		D681EE0BF4F7F274D3067CF2E3E76595 /* LOTLayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTLayerView.m; path = "lottie-ios/Classes/AnimatableLayers/LOTLayerView.m"; sourceTree = "<group>"; };
+		D84D67FFA62C040FDF2184C25A546556 /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
+		DA3B8E2940EAC4661FE7B3B86CDACDDF /* lottie-ios.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "lottie-ios.xcconfig"; sourceTree = "<group>"; };
+		DB6044C155FEC746CD244648A0FFE792 /* LOTShapeRectangle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTShapeRectangle.h; path = "lottie-ios/Classes/Models/LOTShapeRectangle.h"; sourceTree = "<group>"; };
+		DCA40F4A4053496B572F4D6E5FAECFD6 /* LOTAnimatableShapeValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTAnimatableShapeValue.h; path = "lottie-ios/Classes/AnimatableProperties/LOTAnimatableShapeValue.h"; sourceTree = "<group>"; };
+		DE1AAF9D3F49EB57722A018E0C90BF83 /* LOTShapeLayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTShapeLayerView.h; path = "lottie-ios/Classes/AnimatableLayers/LOTShapeLayerView.h"; sourceTree = "<group>"; };
+		DE2A75B0157085EAE3AB6AE47E0321B4 /* LOTShapeCircle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTShapeCircle.m; path = "lottie-ios/Classes/Models/LOTShapeCircle.m"; sourceTree = "<group>"; };
+		DECE92B7F143A5320BF5D4EF5829D3C5 /* LOTComposition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTComposition.m; path = "lottie-ios/Classes/Models/LOTComposition.m"; sourceTree = "<group>"; };
+		DF435BBF67523FB6D2633A16438FDB4B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		E2E7C59527BB79330F25DF2A3CA4073C /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		E408F4140D5B7123E3939876CEFC9494 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		E85DF25736C7955D36D0649839F78899 /* liblottie-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "liblottie-ios.a"; path = "liblottie-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8EE1FD0FA5750AEDA5CCE1BC73D7308 /* LOTLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTLayer.m; path = "lottie-ios/Classes/Models/LOTLayer.m"; sourceTree = "<group>"; };
+		E91D22BDD06AB9E14CA2793EE7F9C001 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
+		EA029698FB183C660074905D474F4498 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		EAF863C4B009916D11757F7EECE41EBC /* Pods-Express-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Express-resources.sh"; sourceTree = "<group>"; };
+		EE35E2D72592BB6CFDF08F4B573C60CE /* LOTShapeCircle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTShapeCircle.h; path = "lottie-ios/Classes/Models/LOTShapeCircle.h"; sourceTree = "<group>"; };
+		EF21A338EBC2C8925116A30B51A5DAC6 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		F0492BF62C8CFEE715E19678DA67FC9C /* lottie-ios-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "lottie-ios-prefix.pch"; sourceTree = "<group>"; };
+		F3A90D00BDAD7F2CC7249ABF3636B567 /* LOTStrokeShapeLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTStrokeShapeLayer.m; path = "lottie-ios/Classes/AnimatableLayers/LOTStrokeShapeLayer.m"; sourceTree = "<group>"; };
+		F49D760BB80C86A18088F530425EF772 /* LOTAnimatableNumberValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTAnimatableNumberValue.m; path = "lottie-ios/Classes/AnimatableProperties/LOTAnimatableNumberValue.m"; sourceTree = "<group>"; };
+		F5502C96C0FB093EFCEBD3DCFAB1AE93 /* CADisplayLink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CADisplayLink.h; path = "lottie-ios/Classes/MacCompatability/CADisplayLink.h"; sourceTree = "<group>"; };
+		F5BBCF57432C4A12D61473E0A5204E4C /* LOTAnimationCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTAnimationCache.m; path = "lottie-ios/Classes/AnimationCache/LOTAnimationCache.m"; sourceTree = "<group>"; };
+		F6D6899E963293E5FC1005EB11A613B2 /* LOTAnimatableLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTAnimatableLayer.h; path = "lottie-ios/Classes/AnimatableLayers/LOTAnimatableLayer.h"; sourceTree = "<group>"; };
+		FB83C3C6CF75608EBC5CCE0E80E87F82 /* CADisplayLink.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CADisplayLink.m; path = "lottie-ios/Classes/MacCompatability/CADisplayLink.m"; sourceTree = "<group>"; };
+		FC0CFFFC9943F8B0CEE3523C8531396D /* libPods-Express.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Express.a"; path = "libPods-Express.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF34236184A8882FA272B82A83684139 /* LOTAnimationCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTAnimationCache.h; path = "lottie-ios/Classes/AnimationCache/LOTAnimationCache.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99BA8D0941DB45290AB12DAE9DFE5F5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0288900FDEC522B575ECA5E674DCDD59 /* Foundation.framework in Frameworks */,
+				9962E8898FE8451572CE7EC331CB2DE1 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7ABBDB1E5D06BEB50462812D3E7ACCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1CFBA8D0D80F4F4B456BC237AD035E2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3284DBE3CA8932733932AD2A48445B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBCCEAD402645565401CA93924736979 /* CoreGraphics.framework in Frameworks */,
+				0214246CCB1FF7182F7222B9CCDF8FCB /* Foundation.framework in Frameworks */,
+				F8DCA6C3C05A59B2C95A1B5F1CBD8C99 /* MobileCoreServices.framework in Frameworks */,
+				DE825B8F32AB823F4BE5492CAC6FCB4B /* Security.framework in Frameworks */,
+				903158692A045396106CA22C0DD13BA6 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBE2CE3B81E4A1287EFFD440F4CCD3AE /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F2197AAFD653C36EE2CE7DC2293AF57 /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				AE7ADCC79E7506FF2FB355767B78FA97 /* AFHTTPSessionManager.h */,
+				B297F84CBB19900D2053329D7BB34D04 /* AFHTTPSessionManager.m */,
+				30131750E1A74752A2BD0ACCD33194FA /* AFURLSessionManager.h */,
+				4C6C6992B0F509541F1F0E9B344A4159 /* AFURLSessionManager.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		3D1369C354C072900CB8FE8C75BFF068 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AFED0A7AF30570651FEB83BFAE8E4305 /* AFNetworking */,
+				68527811455F7507E98DFF8A0A677179 /* lottie-ios */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		48679C914437C0572A1FE057355BB13D /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				B477B6C4AC168316A5891DB7803D237A /* AFSecurityPolicy.h */,
+				D54004975E5102FE618FF14B29187A6A /* AFSecurityPolicy.m */,
+			);
+			name = Security;
+			sourceTree = "<group>";
+		};
+		5BC2E5AE2F9CD265A6A57A38CDD9DC2A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				32C6AFA8236EA0911C99B34DD1996CA2 /* AFNetworking.xcconfig */,
+				E2E7C59527BB79330F25DF2A3CA4073C /* AFNetworking-dummy.m */,
+				6C25F79967FA16D484DC583D0160A6B1 /* AFNetworking-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AFNetworking";
+			sourceTree = "<group>";
+		};
+		619F5C8B788CB8C9B2DCFFA4BBDCB3A7 /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				8AB3918FEA9CA3E0FEF557C5C0EF77A8 /* AFURLRequestSerialization.h */,
+				D2DDACDB3BEA9A9646A8CA2A2E103B0C /* AFURLRequestSerialization.m */,
+				E408F4140D5B7123E3939876CEFC9494 /* AFURLResponseSerialization.h */,
+				C6C6004518D7313A2F3DD3146A6253A0 /* AFURLResponseSerialization.m */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+		68527811455F7507E98DFF8A0A677179 /* lottie-ios */ = {
+			isa = PBXGroup;
+			children = (
+				36D17E42482CED8E442BFE6426B2C739 /* CAAnimationGroup+LOTAnimatableGroup.h */,
+				B2F919B232C86FF77B1F5B8D09F18DEE /* CAAnimationGroup+LOTAnimatableGroup.m */,
+				F5502C96C0FB093EFCEBD3DCFAB1AE93 /* CADisplayLink.h */,
+				FB83C3C6CF75608EBC5CCE0E80E87F82 /* CADisplayLink.m */,
+				A524D3E52AAA7D9FCDCAE17DD8AA233A /* CALayer+Compat.h */,
+				5A4D6D72E831ADDA623E81C5F595D747 /* CALayer+Compat.m */,
+				32688AE63B369263F681CDE1795716E1 /* CGGeometry+LOTAdditions.h */,
+				B620227788F8E8209E3785490E6F59F0 /* CGGeometry+LOTAdditions.m */,
+				546E849FF75C52C8E6D2B415682E4893 /* LOTAnimatableBoundsValue.h */,
+				B27F140420B4A5A03C93EE1A18BAFD4E /* LOTAnimatableBoundsValue.m */,
+				7DCB604BE39BD2C88B789087CC4A30CF /* LOTAnimatableColorValue.h */,
+				9B218122717679CA1C413740CF549C95 /* LOTAnimatableColorValue.m */,
+				F6D6899E963293E5FC1005EB11A613B2 /* LOTAnimatableLayer.h */,
+				65F5A5C2E021A26040A90581AF0677BD /* LOTAnimatableLayer.m */,
+				98D134416DA9EFD6D2A239720FBA7D61 /* LOTAnimatableNumberValue.h */,
+				F49D760BB80C86A18088F530425EF772 /* LOTAnimatableNumberValue.m */,
+				8E1D08C214BFEC3D32F56D14F3AB98FB /* LOTAnimatablePointValue.h */,
+				6672A9C79C0BBAA761D3E3CE5FCE17A4 /* LOTAnimatablePointValue.m */,
+				7E9285D4F523F46D50B9DD3A810DEDFD /* LOTAnimatableScaleValue.h */,
+				96472AA9F9155C727A81BF70B2DAA28B /* LOTAnimatableScaleValue.m */,
+				DCA40F4A4053496B572F4D6E5FAECFD6 /* LOTAnimatableShapeValue.h */,
+				01F4821BCCADFAA6887C91206D2DD049 /* LOTAnimatableShapeValue.m */,
+				6F9034AB039ABE4958E5428E70DBD2D3 /* LOTAnimatableValue.h */,
+				FF34236184A8882FA272B82A83684139 /* LOTAnimationCache.h */,
+				F5BBCF57432C4A12D61473E0A5204E4C /* LOTAnimationCache.m */,
+				20DB05A605170700139BE24A3EEF3159 /* LOTAnimationTransitionController.h */,
+				3E5B3470877012EE1F0375584DAE2105 /* LOTAnimationTransitionController.m */,
+				6617827D36CC284852C8D8D6B08E5C55 /* LOTAnimationView.h */,
+				83FB58EC1B6F43B5C7DC8010AAF06482 /* LOTAnimationView.m */,
+				5CAD2FA629D99D4BF524D3F684AF1515 /* LOTAnimationView_Compat.h */,
+				09DB86EFC312DB785CD92CFEDBBC98DC /* LOTAnimationView_Internal.h */,
+				47E03610A1E38291124BCFCB7E5FCC76 /* LOTAsset.h */,
+				A18B0980ADA55C6C62C5D6C11095F534 /* LOTAsset.m */,
+				B13DD76A8822A63BF255FE4031AD5CA0 /* LOTAssetGroup.h */,
+				6CFA5A35EB4A7EBC7A3F8C2A104915EB /* LOTAssetGroup.m */,
+				313E2886579E3B6C35E578A9A2DE7F65 /* LOTComposition.h */,
+				DECE92B7F143A5320BF5D4EF5829D3C5 /* LOTComposition.m */,
+				AD00BC7856B509CB74D7440913FC2BB0 /* LOTCompositionLayer.h */,
+				BFB41954CAE95B35AFAEC4D551CD27DB /* LOTCompositionLayer.m */,
+				61212597E0B58AC1CDBDCAC748130957 /* LOTEllipseShapeLayer.h */,
+				25299270F2D02C41A8E8AE9E5DECE176 /* LOTEllipseShapeLayer.m */,
+				D12D60D9CD695AC75936D44054D7A1BB /* LOTGroupLayerView.h */,
+				53963AF567563860F82A2BE735C642A3 /* LOTGroupLayerView.m */,
+				098201B5357242ED055F4DE97262332E /* LOTHelpers.h */,
+				4D1974A8AABCD5AA606E09F62C1DB0E6 /* LOTLayer.h */,
+				E8EE1FD0FA5750AEDA5CCE1BC73D7308 /* LOTLayer.m */,
+				CD13B57148DC35062CA7A760B7929211 /* LOTLayerGroup.h */,
+				B0E5751DCAF71B321876F62BAF6AC9B6 /* LOTLayerGroup.m */,
+				C460EF9BF8B5BE6243F0277967F5582A /* LOTLayerView.h */,
+				D681EE0BF4F7F274D3067CF2E3E76595 /* LOTLayerView.m */,
+				2CCD76B71E1A1FC70E257000E3DA2C5F /* LOTMask.h */,
+				6067F32446CEA6D196C3220C28D98AF5 /* LOTMask.m */,
+				243E66A29E369C5BA80FFB73A1AA82B5 /* LOTMaskLayer.h */,
+				8FEFBC070029A37E03D56A69FB2CF4DA /* LOTMaskLayer.m */,
+				66E6BB8ED9BC20235E5CF5C0242A88F8 /* LOTModels.h */,
+				261E223DCCDFA6982676242891A434D8 /* LOTPlatformCompat.h */,
+				2DEC3DD69604A3496DBCCEE75B52F726 /* LOTRectShapeLayer.h */,
+				750D988E2ED8A2F967A793C733E6949D /* LOTRectShapeLayer.m */,
+				EE35E2D72592BB6CFDF08F4B573C60CE /* LOTShapeCircle.h */,
+				DE2A75B0157085EAE3AB6AE47E0321B4 /* LOTShapeCircle.m */,
+				3FC79DB8024244A6F908CBAC933909D2 /* LOTShapeFill.h */,
+				66FBA1C62CC65490D409B15D57B2CB8E /* LOTShapeFill.m */,
+				9B4B8581F6D7C9C50C164E3E4261140A /* LOTShapeGroup.h */,
+				60E553E263BA3FAC4F0F709BAB65E46B /* LOTShapeGroup.m */,
+				DE1AAF9D3F49EB57722A018E0C90BF83 /* LOTShapeLayerView.h */,
+				A58C6991BC8DF378A48344CF31E5DCE7 /* LOTShapeLayerView.m */,
+				230C3982522C8AC6E11A01E2A09CA516 /* LOTShapePath.h */,
+				5B407E2B125F0A8F67CA8CA368D2AAE0 /* LOTShapePath.m */,
+				DB6044C155FEC746CD244648A0FFE792 /* LOTShapeRectangle.h */,
+				511A27EC411CF790719713C281EBEDEF /* LOTShapeRectangle.m */,
+				D30B2155A771A21BA0910700B93C8C05 /* LOTShapeStroke.h */,
+				B5297B423F4FE16C1BD00B2E012B9D56 /* LOTShapeStroke.m */,
+				000DC6832E073A5FE965A1B86F237946 /* LOTShapeTransform.h */,
+				2A46E950B92F39052255A8CB862FA63C /* LOTShapeTransform.m */,
+				7C37C74DF58097419E6A0059508D8069 /* LOTShapeTrimPath.h */,
+				55D6B90137C9A9FD3E1ABAF371B7D1EF /* LOTShapeTrimPath.m */,
+				ACA0BB4C064E1E7632574541EB5F5D74 /* LOTStrokeShapeLayer.h */,
+				F3A90D00BDAD7F2CC7249ABF3636B567 /* LOTStrokeShapeLayer.m */,
+				4C8A4B1E59E52C18549E3AC95F0BB0B5 /* Lottie.h */,
+				B567D983DCFDE9CE3B7DB72FC58CCB99 /* NSValue+Compat.h */,
+				CBA25646019B60FD5824D95FBBB63644 /* NSValue+Compat.m */,
+				13987A8629EA1A6D527068FD0F4AEF85 /* UIBezierPath.h */,
+				514352E27EC4A420A31F6B2B459F69C0 /* UIBezierPath.m */,
+				760577299E4030B727B055424B55234E /* UIColor.h */,
+				482CDE32AA9DBFB2505BCF0B71B8E912 /* UIColor.m */,
+				7B48537D1141E0854DBC0A7391B2844A /* UIColor+Expanded.h */,
+				639D226E0F17F73610F1899C762C3ACC /* UIColor+Expanded.m */,
+				983A295184565C74428D60B7A63F89BD /* Support Files */,
+			);
+			name = "lottie-ios";
+			path = "lottie-ios";
+			sourceTree = "<group>";
+		};
+		7CE475CA61904E9EE3875CF873BC4552 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31A5A3A6A46EA72A7CD85A9B9FEAD67B /* libAFNetworking.a */,
+				E85DF25736C7955D36D0649839F78899 /* liblottie-ios.a */,
+				FC0CFFFC9943F8B0CEE3523C8531396D /* libPods-Express.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */,
+				3D1369C354C072900CB8FE8C75BFF068 /* Pods */,
+				7CE475CA61904E9EE3875CF873BC4552 /* Products */,
+				900B57465557EA002D1188DDAFECD697 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		81230E8432127C6F2E460FCF174F1697 /* Pods-Express */ = {
+			isa = PBXGroup;
+			children = (
+				7274864BC393012C36817CCB6D1061C8 /* Pods-Express-acknowledgements.markdown */,
+				4F56E70D8C582C8191A80D8F702884F7 /* Pods-Express-acknowledgements.plist */,
+				08E5D6C36BEBBB8FC16BED67F69D9CC8 /* Pods-Express-dummy.m */,
+				9AC7E0D2406BF63B94936D4C7799DA3E /* Pods-Express-frameworks.sh */,
+				EAF863C4B009916D11757F7EECE41EBC /* Pods-Express-resources.sh */,
+				78B53A355617A0240B7DE3F975CB0FF0 /* Pods-Express.debug.xcconfig */,
+				6F764A73E283D5D331674A83613CABA3 /* Pods-Express.release.xcconfig */,
+			);
+			name = "Pods-Express";
+			path = "Target Support Files/Pods-Express";
+			sourceTree = "<group>";
+		};
+		834BD160B061A9918F8790A1B4CA1E33 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				93A7A883E4935D665239771CC5F56027 /* AFAutoPurgingImageCache.h */,
+				E91D22BDD06AB9E14CA2793EE7F9C001 /* AFAutoPurgingImageCache.m */,
+				D84D67FFA62C040FDF2184C25A546556 /* AFImageDownloader.h */,
+				11151F5647BD2E7736AD244F147F545F /* AFImageDownloader.m */,
+				C8AA5F7FA038007EF161613CFEC1FF85 /* AFNetworkActivityIndicatorManager.h */,
+				1672BF437FCA9D348F5D0939A843B626 /* AFNetworkActivityIndicatorManager.m */,
+				449938C14EB718509012618602D9317D /* UIActivityIndicatorView+AFNetworking.h */,
+				8D16C39035D003C4573B7A066A5D795D /* UIActivityIndicatorView+AFNetworking.m */,
+				63B757537C5B34DAAD28E03FD8DD5E7E /* UIButton+AFNetworking.h */,
+				0A3034B609D65B685A09AB41F05AF6CF /* UIButton+AFNetworking.m */,
+				4E71EAD02A0A78CAC6EFEFC167DADCD6 /* UIImage+AFNetworking.h */,
+				BC7DBCF0473A61399BE743F4BB541A52 /* UIImageView+AFNetworking.h */,
+				BDE68326112B6628DA72E6E1896C871E /* UIImageView+AFNetworking.m */,
+				706AA36D23CF4317CE78581A6C539EAE /* UIKit+AFNetworking.h */,
+				9E973E9971A5385B9E7E3D9596E51DC7 /* UIProgressView+AFNetworking.h */,
+				EF21A338EBC2C8925116A30B51A5DAC6 /* UIProgressView+AFNetworking.m */,
+				191101B2DB24C83665DF71A0232DB355 /* UIRefreshControl+AFNetworking.h */,
+				3EC2BA0D499F6E7D18D0C31BCAEF0299 /* UIRefreshControl+AFNetworking.m */,
+				37F2C626052B0D4CA4C34595CEFA5682 /* UIWebView+AFNetworking.h */,
+				592A02365E01A5957AD6B77181E67D46 /* UIWebView+AFNetworking.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		900B57465557EA002D1188DDAFECD697 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				81230E8432127C6F2E460FCF174F1697 /* Pods-Express */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		983A295184565C74428D60B7A63F89BD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA3B8E2940EAC4661FE7B3B86CDACDDF /* lottie-ios.xcconfig */,
+				9CF53CC7FFB4ED8A3C9AFF3BAF7D8FE8 /* lottie-ios-dummy.m */,
+				F0492BF62C8CFEE715E19678DA67FC9C /* lottie-ios-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/lottie-ios";
+			sourceTree = "<group>";
+		};
+		AFED0A7AF30570651FEB83BFAE8E4305 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				46E121C341E6052772869696FAB17D96 /* AFNetworking.h */,
+				2F2197AAFD653C36EE2CE7DC2293AF57 /* NSURLSession */,
+				B54521940E0E8D99979520A56CE32C09 /* Reachability */,
+				48679C914437C0572A1FE057355BB13D /* Security */,
+				619F5C8B788CB8C9B2DCFFA4BBDCB3A7 /* Serialization */,
+				5BC2E5AE2F9CD265A6A57A38CDD9DC2A /* Support Files */,
+				834BD160B061A9918F8790A1B4CA1E33 /* UIKit */,
+			);
+			name = AFNetworking;
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		B54521940E0E8D99979520A56CE32C09 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				458AB045914143C8F6915BF6C8E7203E /* AFNetworkReachabilityManager.h */,
+				EA029698FB183C660074905D474F4498 /* AFNetworkReachabilityManager.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		FBE2CE3B81E4A1287EFFD440F4CCD3AE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				041F55AE36E26F3BDCC4B40490B54E30 /* CoreGraphics.framework */,
+				0339164673A5C75C5E4018F798CE5EEE /* Foundation.framework */,
+				DF435BBF67523FB6D2633A16438FDB4B /* MobileCoreServices.framework */,
+				66EB5B938802F986D305D37865A72F7F /* Security.framework */,
+				A4A78E5A576CDDF089002FA7301D2AD8 /* SystemConfiguration.framework */,
+				51EEF5F6B8DF9CB28A3362570D60C5A5 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0A1C2B07813030B0D51EB1D804A4439E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F93EE1AA5E870F2CE81325CE9EB643 /* AFAutoPurgingImageCache.h in Headers */,
+				6B71CE5BA32574F407349C1DA20605B4 /* AFHTTPSessionManager.h in Headers */,
+				707E818332E5033501DF2D7826C639DF /* AFImageDownloader.h in Headers */,
+				E7B0270BEDCBE116DDD853F76E27B0BA /* AFNetworkActivityIndicatorManager.h in Headers */,
+				46401F3C7FF0B0CFE2E9B14914780835 /* AFNetworking.h in Headers */,
+				DE31BBF6A7963C5871A19655EF5532BE /* AFNetworkReachabilityManager.h in Headers */,
+				D59FC98A74E440C4725B6FDC28F5951E /* AFSecurityPolicy.h in Headers */,
+				C1C0D7C93BF3DE14A26757273598D0FA /* AFURLRequestSerialization.h in Headers */,
+				66635EAAE52FF5571DBCDC626FB8CA86 /* AFURLResponseSerialization.h in Headers */,
+				F5CC06F3E0C232483A72DCCFAF393BE0 /* AFURLSessionManager.h in Headers */,
+				682B0E603612B6ADBCCF30580F9A4B09 /* UIActivityIndicatorView+AFNetworking.h in Headers */,
+				2EBAA518CB8B2DAF89A63637091D4615 /* UIButton+AFNetworking.h in Headers */,
+				1341A7AC2439CB63D459D32EF985A414 /* UIImage+AFNetworking.h in Headers */,
+				D5CB999FB5FC80FC126A38AB4DF12227 /* UIImageView+AFNetworking.h in Headers */,
+				5719F06B809080CDEF7E6BC75DEA1A3C /* UIKit+AFNetworking.h in Headers */,
+				B40756412613B53C80EE77C4C223990F /* UIProgressView+AFNetworking.h in Headers */,
+				F099E5987DD80E8D78E909AF81D3C587 /* UIRefreshControl+AFNetworking.h in Headers */,
+				8958F2453EEBAF71BFEBD78FB48986EC /* UIWebView+AFNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF55A61608FDF1FC3DBFCCCF558DD5C9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C4F47D27D9E3B5953422E22BFDC742D /* CAAnimationGroup+LOTAnimatableGroup.h in Headers */,
+				63634C47AAB69889070D6EFB24D771B3 /* CADisplayLink.h in Headers */,
+				2F1C69E897BF079B3EA65846A12105EF /* CALayer+Compat.h in Headers */,
+				551F0C58C432B328A151479B72683C57 /* CGGeometry+LOTAdditions.h in Headers */,
+				E2F8C1D2BA8A011A399FAD90F14D109A /* LOTAnimatableBoundsValue.h in Headers */,
+				DC8688FE0BFA25E6B318B052E8B60CF9 /* LOTAnimatableColorValue.h in Headers */,
+				976FD491552132D75B31956C77C0AE70 /* LOTAnimatableLayer.h in Headers */,
+				45327BFB2B4BFC370E7048DF9598A7A2 /* LOTAnimatableNumberValue.h in Headers */,
+				50AD87213515E85855AF46FF5B0FFAAC /* LOTAnimatablePointValue.h in Headers */,
+				33A6EBB09EB10871AE82CA104EB70019 /* LOTAnimatableScaleValue.h in Headers */,
+				2D1F25C872ABD7A58AA26D2274EC0FF0 /* LOTAnimatableShapeValue.h in Headers */,
+				50968C20B18F11C472C9C2674EDC9DB9 /* LOTAnimatableValue.h in Headers */,
+				9C163DF0F1560E42A8D9DD26AACC3796 /* LOTAnimationCache.h in Headers */,
+				ADCB6CE107D7F2A60903DABC69FE8E99 /* LOTAnimationTransitionController.h in Headers */,
+				CBBEF2747BCA790DAF09B99793AA8AE9 /* LOTAnimationView.h in Headers */,
+				52F637DC726228F796BFA6F97CADFB46 /* LOTAnimationView_Compat.h in Headers */,
+				859BF211FC8CA02D767D041B1E7C8F19 /* LOTAnimationView_Internal.h in Headers */,
+				67AB6DC5C22A9F913ED27C42E6128B0A /* LOTAsset.h in Headers */,
+				657814D5FA3820C3D9391337AB3A028E /* LOTAssetGroup.h in Headers */,
+				CF2695E2C7ABDE20B7371BDCDC659DD1 /* LOTComposition.h in Headers */,
+				A7CF6D18BDE57B32F55C6FF3F25C1EAB /* LOTCompositionLayer.h in Headers */,
+				46062599E73E0F851A0C031BEDBA47D5 /* LOTEllipseShapeLayer.h in Headers */,
+				F10DE30C84DD4AAD45F37C409FC9C519 /* LOTGroupLayerView.h in Headers */,
+				AC3634A57815C9917CD5F1D4CE19B131 /* LOTHelpers.h in Headers */,
+				C7D2FAF65EC6593397553F264A240893 /* LOTLayer.h in Headers */,
+				C0803F821FEAC5A2E67472121F2B2CE7 /* LOTLayerGroup.h in Headers */,
+				20B626CF6DA0545314C00F56071349EE /* LOTLayerView.h in Headers */,
+				2A7BBE3C04207BE015C96195E1B6597F /* LOTMask.h in Headers */,
+				6A4950107736811CE729776E4097521E /* LOTMaskLayer.h in Headers */,
+				8092E325145CE0965F1146E6104D2513 /* LOTModels.h in Headers */,
+				3C7B52F78E29563614C3C2A884638E02 /* LOTPlatformCompat.h in Headers */,
+				31A4BE5610057C697788B10A46DE6A20 /* LOTRectShapeLayer.h in Headers */,
+				EB2AF103A1E01184B1CF8ED6E63FFF1C /* LOTShapeCircle.h in Headers */,
+				BE35EF8CFBC6C4FFB881CCD2A3531570 /* LOTShapeFill.h in Headers */,
+				F2C77A5F01F84557839DBFA3BB197535 /* LOTShapeGroup.h in Headers */,
+				642C4A7768A9BB122239DCCBAC516BF2 /* LOTShapeLayerView.h in Headers */,
+				09856DD0F24D7267FB4A6C0EF2A479EC /* LOTShapePath.h in Headers */,
+				663F85F3EE22A762F6263FCF4BDDC956 /* LOTShapeRectangle.h in Headers */,
+				D5913A54FD7091145BAE23217F3B60C7 /* LOTShapeStroke.h in Headers */,
+				002593C742744900E95B33AC534315FF /* LOTShapeTransform.h in Headers */,
+				DA183DAAD03E1D9F7011917F70827958 /* LOTShapeTrimPath.h in Headers */,
+				BD11223A52C16BF81381D87B02562778 /* LOTStrokeShapeLayer.h in Headers */,
+				AAA9DF650BA812D81A671102176A9A9E /* Lottie.h in Headers */,
+				8BD097470413F1A24F5F5108CA93E97F /* NSValue+Compat.h in Headers */,
+				DB9EAEAD160B92AF2E7EB5265279EA9F /* UIBezierPath.h in Headers */,
+				7F464F6D438AF6C0BC8FAC2E92761100 /* UIColor+Expanded.h in Headers */,
+				DD37E6C71CCCF66CF17280EDEAFE371C /* UIColor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		017653E2E48B0CC14E4BB5342FB2EE43 /* lottie-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C126D931246CCCA229D241130F71C59 /* Build configuration list for PBXNativeTarget "lottie-ios" */;
+			buildPhases = (
+				A97F519C98E159A04A363F82A3E8291D /* Sources */,
+				99BA8D0941DB45290AB12DAE9DFE5F5E /* Frameworks */,
+				DF55A61608FDF1FC3DBFCCCF558DD5C9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "lottie-ios";
+			productName = "lottie-ios";
+			productReference = E85DF25736C7955D36D0649839F78899 /* liblottie-ios.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9E033EDB5EC0819481B0546434FA577B /* AFNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 483FBC4A668BF7F1A8767452E7E188AC /* Build configuration list for PBXNativeTarget "AFNetworking" */;
+			buildPhases = (
+				0068413C89BADAAF4691AA78AFE62C3E /* Sources */,
+				F3284DBE3CA8932733932AD2A48445B2 /* Frameworks */,
+				0A1C2B07813030B0D51EB1D804A4439E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AFNetworking;
+			productName = AFNetworking;
+			productReference = 31A5A3A6A46EA72A7CD85A9B9FEAD67B /* libAFNetworking.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B519E33A3C5DDC5CCEF2A67B9E86FF9D /* Pods-Express */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCED23FDB9E3AE7FDE5B235E8BEE3176 /* Build configuration list for PBXNativeTarget "Pods-Express" */;
+			buildPhases = (
+				871BBCA45F48690AFB42CE8F668D4E4C /* Sources */,
+				A7ABBDB1E5D06BEB50462812D3E7ACCC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2300D680A511EA58CC41430D5F799314 /* PBXTargetDependency */,
+				F50CDE1D7A64B15D5168A241234811F6 /* PBXTargetDependency */,
+			);
+			name = "Pods-Express";
+			productName = "Pods-Express";
+			productReference = FC0CFFFC9943F8B0CEE3523C8531396D /* libPods-Express.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 7CE475CA61904E9EE3875CF873BC4552 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E033EDB5EC0819481B0546434FA577B /* AFNetworking */,
+				017653E2E48B0CC14E4BB5342FB2EE43 /* lottie-ios */,
+				B519E33A3C5DDC5CCEF2A67B9E86FF9D /* Pods-Express */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0068413C89BADAAF4691AA78AFE62C3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				775CE7A8107457BDE59F113D40020839 /* AFAutoPurgingImageCache.m in Sources */,
+				73811DA312BCB537D44D62EC6AD15766 /* AFHTTPSessionManager.m in Sources */,
+				5C0696B2AD1DC23F6473F5A19FAB6296 /* AFImageDownloader.m in Sources */,
+				31ED9BD97AF9E62874AF3CDF2F8090CF /* AFNetworkActivityIndicatorManager.m in Sources */,
+				97A86FAAD4B1AD9B3292FF6AF1D8F82B /* AFNetworking-dummy.m in Sources */,
+				E0EF330DB2D3521ED26E67B2E8687A2E /* AFNetworkReachabilityManager.m in Sources */,
+				66E1040543AF7BA3DC3731FE17C85F5B /* AFSecurityPolicy.m in Sources */,
+				5945033488F9995134DBB7014DE2412F /* AFURLRequestSerialization.m in Sources */,
+				85D30678FF4F0AB306399A368EAA46B2 /* AFURLResponseSerialization.m in Sources */,
+				9F5BB6B4995BA4A3B2C6AEBA6C31A6DB /* AFURLSessionManager.m in Sources */,
+				2579663181BFA8F7DA4B5D7CF8537FC0 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				D10CC46035F7A0C868C0955664A34609 /* UIButton+AFNetworking.m in Sources */,
+				A277AD9070E44BED5A7DE0B1D64D6F15 /* UIImageView+AFNetworking.m in Sources */,
+				D4AA4704CA7863CC86E22AAF88635836 /* UIProgressView+AFNetworking.m in Sources */,
+				B84CD33084C9867E67BD56E47B7BFC04 /* UIRefreshControl+AFNetworking.m in Sources */,
+				A7F7FDCD36E2DD8D8E346DB19452CC03 /* UIWebView+AFNetworking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		871BBCA45F48690AFB42CE8F668D4E4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87C02C17216030C3D34B2FEBB7FFC78F /* Pods-Express-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A97F519C98E159A04A363F82A3E8291D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D59414C77FF7CE11EAE8FD41055EE317 /* CAAnimationGroup+LOTAnimatableGroup.m in Sources */,
+				1D373E365F5D47BB63555C44A4D074C4 /* CADisplayLink.m in Sources */,
+				C99AC730E6DF2B201C3F9FBA73F4009C /* CALayer+Compat.m in Sources */,
+				60B01E313D74FA7BB924C37687EE66A0 /* CGGeometry+LOTAdditions.m in Sources */,
+				0A33EC11B92D26DFDA632061F7140290 /* LOTAnimatableBoundsValue.m in Sources */,
+				FFF1A000C4D1B5D37A19EF3384B21CE9 /* LOTAnimatableColorValue.m in Sources */,
+				430620689F81DAEC262045AAD7B043D5 /* LOTAnimatableLayer.m in Sources */,
+				734B89B24EB978368EAA4047A5A013A2 /* LOTAnimatableNumberValue.m in Sources */,
+				E65B22E7E874CC7112CEDB5E75898789 /* LOTAnimatablePointValue.m in Sources */,
+				51EADCD280386B792A11C9C60DDA539D /* LOTAnimatableScaleValue.m in Sources */,
+				24897352BCC1A8F81320A122717922EA /* LOTAnimatableShapeValue.m in Sources */,
+				90ABE0C387D3EEF6AAA8CE2AD0A15E46 /* LOTAnimationCache.m in Sources */,
+				7BF6AA550E7301B15A0B3C7B676383D8 /* LOTAnimationTransitionController.m in Sources */,
+				660AE0C322CA3AB1E318889C4630146E /* LOTAnimationView.m in Sources */,
+				E9971ED2186E4E1CCA58726737E5A37F /* LOTAsset.m in Sources */,
+				CA1049FDFCDAA7C289D49E823A79825C /* LOTAssetGroup.m in Sources */,
+				D3491C73EE089FDF0762781F0C697A6F /* LOTComposition.m in Sources */,
+				BB46C36421EF0E97AA87C5362D483AF0 /* LOTCompositionLayer.m in Sources */,
+				4D6C6DD44396CAA6A3616A093B71F68D /* LOTEllipseShapeLayer.m in Sources */,
+				A57374EB37963A919199597C9845A301 /* LOTGroupLayerView.m in Sources */,
+				72E66D2143697D3FB44E89E0DA465702 /* LOTLayer.m in Sources */,
+				234476374BDDFD492DEF4A1A9A8086CB /* LOTLayerGroup.m in Sources */,
+				4B849D0E2FF85DFA0F5F2DE2B47C4E71 /* LOTLayerView.m in Sources */,
+				7DFABD0CAF59A9316E4F99FDB4B30399 /* LOTMask.m in Sources */,
+				1D3BDAB7F8070B81A2ED9DE43288A514 /* LOTMaskLayer.m in Sources */,
+				5568AD62E7DC726B11CC4D4A02185D07 /* LOTRectShapeLayer.m in Sources */,
+				CCE3DBB049BD7D3C1E1A0C268183DB07 /* LOTShapeCircle.m in Sources */,
+				0CDE6236860CA3BC2BCEF09369E073ED /* LOTShapeFill.m in Sources */,
+				8B0E3E972FCAEDBFC5A8A55999390053 /* LOTShapeGroup.m in Sources */,
+				2BD7CB42524971F77773BCC6CE077BE0 /* LOTShapeLayerView.m in Sources */,
+				FD01F59B3EEFD45A3CD9C8F8365F1C28 /* LOTShapePath.m in Sources */,
+				3D87C3602C73825D4C41BAFA1B251CF1 /* LOTShapeRectangle.m in Sources */,
+				2615B49F3730F81783173E7D711800D1 /* LOTShapeStroke.m in Sources */,
+				3ECF680963730A4EBB249D388573201A /* LOTShapeTransform.m in Sources */,
+				8D3A193418736314EF329425D2833C9A /* LOTShapeTrimPath.m in Sources */,
+				BDADA79B9751AD3E9DF1B73349ADD897 /* LOTStrokeShapeLayer.m in Sources */,
+				05C2CA3C792A8A630CAFE5139112E691 /* lottie-ios-dummy.m in Sources */,
+				45B53619F91C2401448C306BB0587A37 /* NSValue+Compat.m in Sources */,
+				01F7DBE5D8FE050BFE3791E44D663C57 /* UIBezierPath.m in Sources */,
+				DB773B8E14EAD7A3EEB6713AA7298CDC /* UIColor+Expanded.m in Sources */,
+				71C179D42455148C1450DA7397B2FA3C /* UIColor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2300D680A511EA58CC41430D5F799314 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = 9E033EDB5EC0819481B0546434FA577B /* AFNetworking */;
+			targetProxy = 3FFBD47565F8F1981DAC1FED24D0DB48 /* PBXContainerItemProxy */;
+		};
+		F50CDE1D7A64B15D5168A241234811F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "lottie-ios";
+			target = 017653E2E48B0CC14E4BB5342FB2EE43 /* lottie-ios */;
+			targetProxy = 7A720A5E32295AAC40102BDAC0333D2B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		34FE9531DA9AF2820790339988D5FF41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A919D51D12FD6294AB04B8A1807A4B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA3B8E2940EAC4661FE7B3B86CDACDDF /* lottie-ios.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/lottie-ios/lottie-ios-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		72D1B831316303C2E356BBAC53FEF78A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32C6AFA8236EA0911C99B34DD1996CA2 /* AFNetworking.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B1BEAC92A1B89FFE6B043C4E434C999A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA3B8E2940EAC4661FE7B3B86CDACDDF /* lottie-ios.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/lottie-ios/lottie-ios-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B8D254070FF9E7187D81B920E64D8CB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78B53A355617A0240B7DE3F975CB0FF0 /* Pods-Express.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C0F54BDD03852AFC3F86660AD0EFDF2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F764A73E283D5D331674A83613CABA3 /* Pods-Express.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C104F7F091290C3D1E248192F07FE689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		FF778088B62C05BE1205DAE628D151DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32C6AFA8236EA0911C99B34DD1996CA2 /* AFNetworking.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C104F7F091290C3D1E248192F07FE689 /* Debug */,
+				34FE9531DA9AF2820790339988D5FF41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C126D931246CCCA229D241130F71C59 /* Build configuration list for PBXNativeTarget "lottie-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A919D51D12FD6294AB04B8A1807A4B0 /* Debug */,
+				B1BEAC92A1B89FFE6B043C4E434C999A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		483FBC4A668BF7F1A8767452E7E188AC /* Build configuration list for PBXNativeTarget "AFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF778088B62C05BE1205DAE628D151DF /* Debug */,
+				72D1B831316303C2E356BBAC53FEF78A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCED23FDB9E3AE7FDE5B235E8BEE3176 /* Build configuration list for PBXNativeTarget "Pods-Express" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8D254070FF9E7187D81B920E64D8CB8 /* Debug */,
+				C0F54BDD03852AFC3F86660AD0EFDF2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
