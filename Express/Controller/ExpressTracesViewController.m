@@ -47,6 +47,10 @@ NSDictionary* expressNameAndCodeTrace;//快递字典
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    UIColor *ios7BlueColor = [UIColor colorWithRed:135.0/255.0 green:206.0/255.0 blue:250.0/255.0 alpha:1.0];
+    self.navigationController.navigationBar.barTintColor = ios7BlueColor;
+    self.navigationController.navigationBar.translucent = NO;
+    
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"保存"
@@ -95,7 +99,7 @@ NSDictionary* expressNameAndCodeTrace;//快递字典
             cell.textLabel.text = [expressNameAndCodeTrace objectForKey:shipperCode];
             NSLog(@"%@++++%@",[expressNameAndCodeTrace objectForKey:shipperCode],shipperCode);
             cell.detailTextLabel.text = logisticCode;
-            cell.imageView.image = [UIImage imageNamed:@"bule"];
+            cell.imageView.image = [UIImage imageNamed:@"express-history"];
         }
     }else if (indexPath.section == 1){
         //2. 返回快递的轨迹
@@ -138,7 +142,7 @@ NSDictionary* expressNameAndCodeTrace;//快递字典
         //NSString* dayString = [timeInfoString substringToIndex:10];//获得年月日
         cell.textLabel.text = timeInfoString;
         cell.detailTextLabel.text = tracesInfoString;
-        cell.imageView.image = [UIImage imageNamed:@"bule"];
+        cell.imageView.image = [UIImage imageNamed:@"express-history"];
         //调整UILabel自动换行
         cell.detailTextLabel.lineBreakMode = UILineBreakModeWordWrap;
         cell.detailTextLabel.numberOfLines = 0;

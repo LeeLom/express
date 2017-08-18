@@ -24,8 +24,24 @@ NSArray* expressTraces2;//快递轨迹
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    UIColor *ios7BlueColor = [UIColor colorWithRed:135.0/255.0 green:206.0/255.0 blue:250.0/255.0 alpha:1.0];
+    self.navigationController.navigationBar.barTintColor = ios7BlueColor;
+    self.navigationController.navigationBar.translucent = NO;
+    
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    self.tableView.tableFooterView = [UIView new];
+    
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     expressHistory = [[NSMutableArray alloc]init];
     
     NSString *path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
@@ -34,14 +50,9 @@ NSArray* expressTraces2;//快递轨迹
     NSArray *result = [ NSArray arrayWithContentsOfFile:fileName];
     //NSLog(@"快递历史：%@",result);
     expressHistory = [NSMutableArray arrayWithArray:result];
+    
+    [_tableView reloadData];
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -73,7 +84,7 @@ NSArray* expressTraces2;//快递轨迹
     NSString* detailStringMsg = [dicTmp objectForKey:@"AcceptStation"];
     NSString* detailString = [NSString stringWithFormat:@"%@  %@",detailStringTime2,detailStringMsg];
     cell.detailTextLabel.text = detailString;
-    cell.imageView.image = [UIImage imageNamed:@"bule"];
+    cell.imageView.image = [UIImage imageNamed:@"express-history"];
     //detailTextLabel自动换行
     cell.detailTextLabel.lineBreakMode = UILineBreakModeWordWrap;
     cell.detailTextLabel.numberOfLines = 0;
@@ -92,6 +103,7 @@ NSArray* expressTraces2;//快递轨迹
         NSLog(@"expressUser:%@",expressForUser2);
     }
     
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{

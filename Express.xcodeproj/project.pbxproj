@@ -20,6 +20,9 @@
 		E639E67D1D49BD7D004C4D1A /* ChooseExpressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E639E67C1D49BD7D004C4D1A /* ChooseExpressViewController.m */; };
 		E655F63D1F078E30003E0B00 /* emoji_tongue.json in Resources */ = {isa = PBXBuildFile; fileRef = E655F63C1F078E30003E0B00 /* emoji_tongue.json */; };
 		E655F6431F07912A003E0B00 /* EmojiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E655F6421F07912A003E0B00 /* EmojiViewController.m */; };
+		E655F6451F07D585003E0B00 /* fish.json in Resources */ = {isa = PBXBuildFile; fileRef = E655F6441F07D585003E0B00 /* fish.json */; };
+		E655F6471F07D69C003E0B00 /* motorcycle.json in Resources */ = {isa = PBXBuildFile; fileRef = E655F6461F07D69C003E0B00 /* motorcycle.json */; };
+		E655F6491F07D85C003E0B00 /* permission.json in Resources */ = {isa = PBXBuildFile; fileRef = E655F6481F07D85C003E0B00 /* permission.json */; };
 		E6C8F9BD1D47321300E52D0E /* MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C8F9BC1D47321300E52D0E /* MD5.m */; };
 		E6C8F9C31D473A3200E52D0E /* MF_Base64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C8F9C21D473A3200E52D0E /* MF_Base64Additions.m */; };
 		E6C8F9C61D4777BA00E52D0E /* ExpressInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C8F9C51D4777BA00E52D0E /* ExpressInfo.m */; };
@@ -34,7 +37,7 @@
 		E606C3711D4F03AA00BE4A07 /* ScanQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScanQRCodeViewController.m; path = Controller/ScanQRCodeViewController.m; sourceTree = "<group>"; };
 		E60C1BFA1D50602C005A9A6E /* ExpressHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExpressHistoryViewController.h; path = Controller/ExpressHistoryViewController.h; sourceTree = "<group>"; };
 		E60C1BFB1D50602C005A9A6E /* ExpressHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExpressHistoryViewController.m; path = Controller/ExpressHistoryViewController.m; sourceTree = "<group>"; };
-		E617B3F71D447A8100701817 /* Express.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Express.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E617B3F71D447A8100701817 /* 查快递.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "查快递.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E617B3FB1D447A8100701817 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E617B3FD1D447A8100701817 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E617B3FE1D447A8100701817 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -53,6 +56,9 @@
 		E655F63C1F078E30003E0B00 /* emoji_tongue.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = emoji_tongue.json; sourceTree = "<group>"; };
 		E655F6411F07912A003E0B00 /* EmojiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiViewController.h; sourceTree = "<group>"; };
 		E655F6421F07912A003E0B00 /* EmojiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiViewController.m; sourceTree = "<group>"; };
+		E655F6441F07D585003E0B00 /* fish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fish.json; sourceTree = "<group>"; };
+		E655F6461F07D69C003E0B00 /* motorcycle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = motorcycle.json; sourceTree = "<group>"; };
+		E655F6481F07D85C003E0B00 /* permission.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = permission.json; sourceTree = "<group>"; };
 		E6C8F9BB1D47321300E52D0E /* MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MD5.h; path = Model/MD5.h; sourceTree = "<group>"; };
 		E6C8F9BC1D47321300E52D0E /* MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MD5.m; path = Model/MD5.m; sourceTree = "<group>"; };
 		E6C8F9C11D473A3200E52D0E /* MF_Base64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MF_Base64Additions.h; path = Model/MF_Base64Additions.h; sourceTree = "<group>"; };
@@ -106,7 +112,7 @@
 		E617B3F81D447A8100701817 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E617B3F71D447A8100701817 /* Express.app */,
+				E617B3F71D447A8100701817 /* 查快递.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,6 +133,9 @@
 		E617B3FA1D447A8100701817 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E655F6461F07D69C003E0B00 /* motorcycle.json */,
+				E655F6481F07D85C003E0B00 /* permission.json */,
+				E655F6441F07D585003E0B00 /* fish.json */,
 				E655F63C1F078E30003E0B00 /* emoji_tongue.json */,
 				E617B4061D447A8100701817 /* Main.storyboard */,
 				E617B40B1D447A8100701817 /* LaunchScreen.storyboard */,
@@ -192,7 +201,7 @@
 			);
 			name = Express;
 			productName = Express;
-			productReference = E617B3F71D447A8100701817 /* Express.app */;
+			productReference = E617B3F71D447A8100701817 /* 查快递.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -234,7 +243,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E617B40D1D447A8100701817 /* LaunchScreen.storyboard in Resources */,
+				E655F6491F07D85C003E0B00 /* permission.json in Resources */,
 				E617B40A1D447A8100701817 /* Assets.xcassets in Resources */,
+				E655F6471F07D69C003E0B00 /* motorcycle.json in Resources */,
+				E655F6451F07D585003E0B00 /* fish.json in Resources */,
 				E655F63D1F078E30003E0B00 /* emoji_tongue.json in Resources */,
 				E617B4081D447A8100701817 /* Main.storyboard in Resources */,
 			);
@@ -421,7 +433,7 @@
 				INFOPLIST_FILE = Express/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bupt.leelom.Express;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "查快递";
 			};
 			name = Debug;
 		};
@@ -433,7 +445,7 @@
 				INFOPLIST_FILE = Express/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bupt.leelom.Express;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "查快递";
 			};
 			name = Release;
 		};

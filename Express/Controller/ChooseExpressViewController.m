@@ -46,6 +46,10 @@ NSArray* expressComInlandIndex;
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"开始返回这个view");
+    
+    UIColor *ios7BlueColor = [UIColor colorWithRed:135.0/255.0 green:206.0/255.0 blue:250.0/255.0 alpha:1.0];
+    self.navigationController.navigationBar.barTintColor = ios7BlueColor;
+    self.navigationController.navigationBar.translucent = NO;
     self.tableview.delegate = self;
     self.tableview.dataSource = self;
     
@@ -111,11 +115,11 @@ NSArray* expressComInlandIndex;
     if (!cell) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
-    cell.imageView.image = [UIImage imageNamed:@"bule"];
+    cell.imageView.image = [UIImage imageNamed:@"express-phone"];
     NSArray* arrayTmp = expressComInland[indexPath.section];
     cell.textLabel.text = arrayTmp[indexPath.row];
     
-    
+    cell.selectionStyle = UITableViewCellSelectionStyleBlue;
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

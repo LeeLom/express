@@ -24,7 +24,7 @@
     // Override point for customization after application launch.
     
     [self.window makeKeyAndVisible];
-    _animationView = [LOTAnimationView animationNamed:@"emoji_tongue"];
+    _animationView = [LOTAnimationView animationNamed:@"permission"];
     _animationView.frame = CGRectMake(0, 0, self.window.frame.size.width, self.window.frame.size.width);
     _animationView.center = self.window.center;
     _animationView.contentMode = UIViewContentModeScaleAspectFill;

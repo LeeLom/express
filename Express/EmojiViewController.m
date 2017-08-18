@@ -17,7 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:2 repeats:NO block:^(NSTimer * _Nonnull timer) {
+    //fish: 10s
+    //emoji: 2s
+    NSTimer *timer =
+    [NSTimer scheduledTimerWithTimeInterval:6 repeats:NO block:^(NSTimer * _Nonnull timer) {
         UIViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"tab"];
         [self presentViewController:vc animated:NO completion:nil];
     }];

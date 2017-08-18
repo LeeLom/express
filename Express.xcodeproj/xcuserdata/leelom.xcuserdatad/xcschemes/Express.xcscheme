@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E617B3F61D447A8100701817"
-               BuildableName = "Express.app"
+               BuildableName = "&#x67e5;&#x5feb;&#x9012;.app"
                BlueprintName = "Express"
                ReferencedContainer = "container:Express.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E617B3F61D447A8100701817"
-            BuildableName = "Express.app"
+            BuildableName = "&#x67e5;&#x5feb;&#x9012;.app"
             BlueprintName = "Express"
             ReferencedContainer = "container:Express.xcodeproj">
          </BuildableReference>
@@ -56,7 +56,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E617B3F61D447A8100701817"
-            BuildableName = "Express.app"
+            BuildableName = "&#x67e5;&#x5feb;&#x9012;.app"
             BlueprintName = "Express"
             ReferencedContainer = "container:Express.xcodeproj">
          </BuildableReference>
@@ -75,7 +75,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E617B3F61D447A8100701817"
-            BuildableName = "Express.app"
+            BuildableName = "&#x67e5;&#x5feb;&#x9012;.app"
             BlueprintName = "Express"
             ReferencedContainer = "container:Express.xcodeproj">
          </BuildableReference>

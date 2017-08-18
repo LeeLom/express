@@ -45,11 +45,15 @@ NSString* logisticCodeUser;
     self.expressNum.delegate = self;
     self.expressCompany.delegate = self;
     self.navigationItem.title = @"快递查询";
-    
-    UIImageView* imgView = [[UIImageView alloc]initWithFrame:self.view.frame];
-    //imgView.image = [UIImage imageNamed:@"background2"];
-    [self.view addSubview:imgView];
-    [self.view sendSubviewToBack:imgView];
+    UIColor *ios7BlueColor = [UIColor colorWithRed:135.0/255.0 green:206.0/255.0 blue:250.0/255.0 alpha:1.0];
+    self.navigationController.navigationBar.barTintColor = ios7BlueColor;
+    self.navigationController.navigationBar.translucent = NO;
+    self.tabBarController.tabBar.barTintColor = ios7BlueColor;
+    self.tabBarController.tabBar.tintColor = [UIColor whiteColor];
+//    UIImageView* imgView = [[UIImageView alloc]initWithFrame:self.view.frame];
+//    imgView.image = [UIImage imageNamed:@"background3"];
+//    [self.view addSubview:imgView];
+//    [self.view sendSubviewToBack:imgView];
     //self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background2"]];
 
     //添加手势，点击屏幕其他区域关闭键盘

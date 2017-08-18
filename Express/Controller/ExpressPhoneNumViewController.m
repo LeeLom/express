@@ -50,6 +50,10 @@
     [self initData];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
+    
+    UIColor *ios7BlueColor = [UIColor colorWithRed:135.0/255.0 green:206.0/255.0 blue:250.0/255.0 alpha:1.0];
+    self.navigationController.navigationBar.barTintColor = ios7BlueColor;
+    self.navigationController.navigationBar.translucent = NO;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -316,9 +320,9 @@
     ExpressPhoneNum* expressTmp = arrayTmp[indexPath.row];
     cell.textLabel.text = expressTmp.expressName;
     cell.detailTextLabel.text = expressTmp.expressNum;
-    cell.imageView.image = [UIImage imageNamed:@"bule"];
+    cell.imageView.image = [UIImage imageNamed:@"express-phone"];
     
-    //cell.selectionStyle = UITableViewCellSelectionStyleNone;//不让选择的时候显示底色
+    cell.selectionStyle = UITableViewCellSelectionStyleBlue;//不让选择的时候显示底色
     
     return cell;
 }

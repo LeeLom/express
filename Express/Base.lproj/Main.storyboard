@@ -13,7 +13,7 @@
         <scene sceneID="dBK-kC-hJw">
             <objects>
                 <navigationController id="4Jw-fq-FMT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="快递查询" image="search4" id="iKG-Ht-0vd"/>
+                    <tabBarItem key="tabBarItem" title="快递查询" image="search" id="iKG-Ht-0vd"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ix3-Ca-aOP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -38,16 +38,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入快递单号" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="GKD-VH-YTL">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入快递单号" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="GKD-VH-YTL">
                                 <rect key="frame" x="44" y="169" width="299" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKb-Tf-OK6">
                                 <rect key="frame" x="139" y="291" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="查询"/>
+                                <state key="normal" title="查询" backgroundImage="btn-blue">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
                                     <action selector="expressSearch:" destination="9pv-A4-QxB" eventType="touchUpInside" id="VFg-9F-QIS"/>
                                 </connections>
@@ -55,24 +58,31 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="快递名称备注" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bS9-N4-hod">
                                 <rect key="frame" x="134" y="113" width="106" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="选择快递公司" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="GfN-Ti-sKp">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="选择快递公司" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="GfN-Ti-sKp">
                                 <rect key="frame" x="44" y="223" width="299" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="chooseExpressCompany:" destination="9pv-A4-QxB" eventType="editingDidBegin" id="tkW-nj-tzR"/>
                                 </connections>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boy" translatesAutoresizingMaskIntoConstraints="NO" id="K24-Vu-rmw">
+                                <rect key="frame" x="175" y="378" width="200" height="152"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" id="acW-dT-cKf"/>
                     <navigationItem key="navigationItem" title="快递查询" id="fse-Tf-j8T">
-                        <barButtonItem key="rightBarButtonItem" image="qrcode_tabbar_icon_qrcode" id="AjQ-1d-4Zr" userLabel="二维码">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="AjQ-1d-4Zr" userLabel="二维码">
                             <connections>
                                 <segue destination="tHd-Xe-Rba" kind="presentation" id="vDH-3j-ubd"/>
                             </connections>
@@ -127,7 +137,7 @@
         <scene sceneID="5fG-dV-xdg">
             <objects>
                 <navigationController id="DSb-mf-07l" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="快递历史" image="car4" id="WpY-vs-JrQ"/>
+                    <tabBarItem key="tabBarItem" title="快递历史" image="foot" id="WpY-vs-JrQ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qhf-hE-DLv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -173,7 +183,7 @@
         <scene sceneID="EZE-Om-lc6">
             <objects>
                 <navigationController id="3MI-Bv-A6E" customClass="Express" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="快递电话" image="phone4" id="fgP-xg-Zey"/>
+                    <tabBarItem key="tabBarItem" title="快递电话" image="phone" id="fgP-xg-Zey"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yeH-ZA-9rr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -332,12 +342,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="car4" width="20" height="16"/>
-        <image name="phone4" width="21" height="21"/>
+        <image name="boy" width="200" height="152"/>
+        <image name="btn-blue" width="298" height="109"/>
+        <image name="foot" width="16" height="16"/>
+        <image name="phone" width="32" height="32"/>
         <image name="qrcode_border" width="51" height="51"/>
         <image name="qrcode_scanline_qrcode" width="218" height="170"/>
         <image name="qrcode_tabbar_icon_barcode" width="40" height="40"/>
         <image name="qrcode_tabbar_icon_qrcode" width="40" height="40"/>
-        <image name="search4" width="20" height="20"/>
+        <image name="search" width="32" height="32"/>
     </resources>
 </document>
